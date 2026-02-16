@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import analyticbg from "../../assets/service/analyticbg.png"
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -37,6 +37,9 @@ const slides = [
 ];
 
 const DataAnalytics = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const projects = [
         {

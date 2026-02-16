@@ -12,7 +12,9 @@ import Pic2 from "../assets/blog/Picture 2.jpg"
 import Profile1 from "../assets/blog/profile1.jpg";
 import Profile2 from "../assets/blog/profile2.jpg";
 import Profile3 from "../assets/blog/profile3.jpg";
-
+import Valbanner from "../assets/blog/valbannermain.png";
+import Val1 from "../assets/blog/v2.png";
+import Valbannermobile from "../assets/blog/val.jpeg";
 
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
@@ -20,8 +22,31 @@ import CommentForm from "./CommentForm";
 
 
 const blogPosts = [
+
     {
         id: 1,
+        title: "The Audience Most Marketing Teams Forget to Woo on Valentine's Day.",
+        excerpt: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you’ll see a relentless wave of red and white.`,
+        image: Valbanner,
+        imagemobile: Valbannermobile,
+        photo1: Val1,
+        author: "Philomina Akekudaga",
+        date: "February 14, 2026",
+        profile: Profile3,
+        content: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you’ll see a relentless wave of red and white. Teddy bears and heart-shaped chocolates take over the market, and it gets some people wondering:`,
+        content1: `Is Valentine’s Day in Ghana strictly for couples? Are businesses doing too much for couples and not enough for the rest in a market full of dedicated family-oriented people, active friend groups, and hardworking singles? Here's why it seems like businesses are trapped in a romantic cycle and how things are gradually changing.`,
+        header1: `The "Couple-Centric" Obsession`,
+        content2: `Traditionally, Valentine’s Day in Ghana has been marketed as a high-stakes performance of romantic love, which is evident in most brand advertisements during the period. We see ads where hotels are offering "Romantic Candlelit Dinners for Two" and perfume stores telling customers to "Get her the scent that says I love you."There’s generally a heavy focus on the significant other, inadvertently ignoring the reality of the modern Ghanaian demographic and a massive population of people who may not have a "Val" but definitely have money to spend.`,
+        content3: `When a brand's entire marketing strategy for February focuses solely on 'Love and Romance,' it misses revenue opportunities by neglecting themes of friendship, self-love, and various celebratory occasions throughout the month.Perhaps the biggest oversight in these campaigns is the disconnect from Ghanaian culture itself. In Ghana, love is communal. It is the solidarity we show our neighbours, the deep respect for our elders, and the bond we share as family. Framing Valentine’s Day solely through a Western lens of dating and relationships ignores the very communal fabric that defines us.`,
+        header2: `The Shift: Is the Tide Turning?`,
+        content7: `Fortunately, the approach is gradually shifting. Valentine’s campaigns are gradually moving away from the traditional romantic clichés seen around the world. Several Ghanaian brands have begun to embrace love as a concept that extends beyond romance, allowing for diverse expressions and inclusivity. A clear indication of this shift is observed on National Chocolate Day, organized by the Ghana Tourism Authority, which has increasingly broadened its emphasis beyond couples and romantic ties. Brands like Kingsbite and Golden Tree are now marketing chocolate as a gift to be shared among parents, teachers, coworkers, and children.`,
+        content8: `There is also a growing recognition of Galentine's Day, which celebrates female friendship and sisterhood. Brunches, dinners, spa packages, and networking events targeted at women are becoming increasingly popular in Accra and other urban centers.This signals a clear opportunity for brands to target organized friend groups, young professional women, and community-based networks who are willing to spend on shared experiences.`,
+        content9: `Such a shift is not only timely but also evidence-based, as research shows that campaigns rooted in community and family values drive stronger engagement and long-term loyalty (Takyi et al., 2025). Brands that align with this cultural reality stand to capture wider audiences and build deeper connections that unlock greater revenue opportunities. Ultimately, everyone appreciates a good deal, regardless of their relationship status. `
+
+
+    },
+    {
+        id: 2,
         title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
         excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
@@ -38,7 +63,7 @@ const blogPosts = [
 
     },
     {
-        id: 2,
+        id: 3,
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digibanner,
@@ -55,7 +80,7 @@ const blogPosts = [
 
     },
     {
-        id: 3,
+        id: 4,
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
         image: Mtn,
@@ -67,7 +92,7 @@ const blogPosts = [
         content2: `The event was the culmination of months of hard work and collaboration between SCEF and Interactive Digital (!D). Our agency was at the helm of a creative strategic and digital campaign aimed at amplifying SCEF’s cause. Our team, led by Mr. Ekow Thompson, Chief Operations Officer, graced the occasion to show our support for this significant event. “Our support for SCEF’s initiatives is a testament to our belief in driving purpose beyond profits. At !D, we are committed to leveraging our creative and technological expertise to make a meaningful impact on society. Supporting street-connected children is not just a cause; it aligns with our core values of integrity, teamwork, and empathy. We believe that by working together, we can create lasting change and inspire others to join us in this mission. We extend our heartfelt appreciation to the Ninani Group, CRENSHAW and to all the partners who lent us resources in cash and in kind to make this a success.”, Mr. Ekow Thompson said. Join us in supporting SCEF’s mission to empower street-connected children. Together, we can make a difference.`,
     },
     {
-        id: 4,
+        id: 5,
         title: "Leveraging Platform Specific Features For Digital Communication",
         excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
         image: Picbanner,
@@ -133,7 +158,13 @@ const BlogDetail = () => {
                     <img
                         src={blogPost.image}
                         alt={blogPost.title}
-                        className="w-full h-[381px] object-cover rounded-lg"
+                        className="w-full h-[381px] object-cover rounded-lg md:block hidden"
+                        loading="lazy"
+                    />
+                    <img
+                        src={blogPost.imagemobile}
+                        alt={blogPost.title}
+                        className="w-full h-[481px] px-2 rounded-md object-cover object-top rounded-lg md:hidden block"
                         loading="lazy"
                     />
                     <div className="lg:p-6 p-2">
@@ -157,6 +188,7 @@ const BlogDetail = () => {
                             {blogPost.content1}
                         </p>
                         <br />
+                        <h2 className="text-2xl font-bold mb-2">{blogPost.header1}</h2>
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content2}
                         </p>
@@ -164,29 +196,55 @@ const BlogDetail = () => {
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content3}
                         </p>
-                        <div className="flex lg:flex-row flex-col w-full mt-6 gap-10">
-                            <img
-                                src={blogPost.photo1}
-                                alt="Author"
-                                className="w-[317px] h-[300px] object-cover rounded-lg"
-                                loading="lazy"
-
-                            />
-                            <img
-                                src={blogPost.photo2}
-                                alt="Author"
-                                className="w-[317px] h-[300px] object-cover rounded-lg"
-                                loading="lazy"
-                            />
-                        </div>
                         <br />
+                        <h2 className="text-2xl font-bold mb-2">{blogPost.header2}</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content4}
+                            {blogPost.content7}
                         </p>
                         <br />
                         <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content5}
+                            {blogPost.content8}
                         </p>
+                        <br />
+                        <p className="text-gray-700 leading-relaxed">
+                            {blogPost.content9}
+                        </p>
+                        {(blogPost.photo1 || blogPost.photo2) && (
+                            <div className="flex lg:flex-row flex-col w-full mt-6 gap-10">
+                                {blogPost.photo1 && (
+                                    <img
+                                        src={blogPost.photo1}
+                                        alt="Blog detail"
+                                        className="md:w-[317px] h-[400px] object-cover rounded-lg"
+                                        loading="lazy"
+                                    />
+                                )}
+                                {blogPost.photo2 && (
+                                    <img
+                                        src={blogPost.photo2}
+                                        alt="Blog detail"
+                                        className="md:w-[317px] h-[300px] object-cover rounded-lg"
+                                        loading="lazy"
+                                    />
+                                )}
+                            </div>
+                        )}
+                        {blogPost.content4 && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">
+                                    {blogPost.content4}
+                                </p>
+                            </>
+                        )}
+                        {blogPost.content5 && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">
+                                    {blogPost.content5}
+                                </p>
+                            </>
+                        )}
 
                         <div className="flex w-full items-center justify-between mt-10">
                             <span>Share</span>

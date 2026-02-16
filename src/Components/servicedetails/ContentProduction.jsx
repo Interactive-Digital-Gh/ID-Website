@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 import contentbg from "../../assets/service/contentbg.png"
 
 import Video from "../../assets/service/v1.png"
@@ -15,33 +15,29 @@ const services = [
         image:
             "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=800&q=80",
         description:
-            "From our roots as a dynamic social media agency, we’ve evolved into West Africa’s emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.",
+            "Wiggle it, loop it, animate it. We turn static into magic with scroll-stopping motion that makes complex look cool.",
     },
     {
         title: "Video Production",
         image:
             Video,
         description:
-            "From our roots as a dynamic social media agency, we’ve evolved into West Africa’s emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.",
-    },
-    {
-        title: "Social Content",
-        image:
-            "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80",
-        description:
-            "From our roots as a dynamic social media agency, we’ve evolved into West Africa’s emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.",
+            "We craft quality visuals that don’t just tell your story but own the moment, whether it’s on a phone, billboard, or the boardroom screen.",
     },
     {
         title: "Immersive Experience",
         image:
             Exp,
         description:
-            "From our roots as a dynamic social media agency, we’ve evolved into West Africa’s emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.",
+            "We build unforgettable, multi-sensory journeys. Whether it’s virtual, physical, or somewhere in between, we create bold, interactive worlds that are worth every experience.",
     },
 ];
 
 
 const ContentProduction = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='overflow-hidden'>
             <div className="relative overflow-hidden">

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 
 import innovabg from "../../assets/service/innovabg.png"
@@ -31,6 +31,9 @@ const projects = [
 
 const InnovationConsulting = () => {
     const [activeId, setActiveId] = useState(1);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div>

@@ -65,7 +65,7 @@ const Services = () => {
                             {/* Card Section */}
                             <a
                                 href="/production"
-                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg p-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
+                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg py-1 px-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
                                 style={{ marginRight: "-100px" }} /* Overlap onto the image */
                             >
                                 <h2 className="text-2xl font-bold mb-2">Content Production</h2>

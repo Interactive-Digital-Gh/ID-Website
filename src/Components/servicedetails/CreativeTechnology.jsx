@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import contentbg from "../../assets/service/ct.png"
 import Splash from "../../assets/service/sp1.png"
@@ -10,6 +10,9 @@ import Splash2 from "../../assets/service/sp3.png"
 
 
 const CreativeTechnology = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='overflow-hidden'>
             <div className="relative overflow-hidden">
@@ -43,8 +46,7 @@ const CreativeTechnology = () => {
                             Our Services
                         </h2>
                         <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl">
-                            From our roots as a dynamic social media agency, we've evolved into West Africa's emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.
-                        </p>
+                            We leverage the power of innovative tech to bring creative ideas to life and enhance brand experiences.                        </p>
                     </div>
 
                     {/* === ROW 1 === */}
@@ -55,8 +57,7 @@ const CreativeTechnology = () => {
                                 AR/VR Solutions
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into West Africa's emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter..
-
+                                We create AR and VR experiences your community wants to dive into. Fresh, fun, and unforgettable.
                             </p>
                         </div>
 
@@ -101,10 +102,7 @@ const CreativeTechnology = () => {
                                 AI Implementations
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We put AI to work for your brand. Think personalized experiences, streamlined processes, and creative output with a touch of future magic.
                             </p>
                         </div>
                     </div>
@@ -117,10 +115,7 @@ const CreativeTechnology = () => {
                                 AR/VR Solutions
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We blend the physical and digital to create brand moments you can actually step into. It’s not just content; it’s an experience you can touch, explore, and remember.
                             </p>
                         </div>
 

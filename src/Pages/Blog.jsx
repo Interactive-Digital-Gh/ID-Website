@@ -6,7 +6,7 @@ import Digi from "../assets/blog/digi.jpg";
 import Profile1 from "../assets/blog/profile1.jpg";
 import Profile2 from "../assets/blog/profile2.jpg";
 import Profile3 from "../assets/blog/profile3.jpg";
-
+import Val from "../assets/blog/val.jpeg";
 
 import blogbanner from "../assets/blog/blogbanner.png";
 import { useState } from "react";
@@ -15,8 +15,19 @@ import { useNavigate } from "react-router-dom";
 
 
 const blogPosts = [
+
     {
         id: 1,
+        title: "The Audience Most Marketing Teams Forget to Woo on Valentine's Day.",
+        excerpt: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you’ll see a relentless wave of red and white.`,
+        image: Val,
+        author: "Philomina Akekudaga",
+        date: "February 14, 2026",
+        profile: Profile3,
+    },
+
+    {
+        id: 2,
         title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
         excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
@@ -25,7 +36,7 @@ const blogPosts = [
         profile: Profile3,
     },
     {
-        id: 2,
+        id: 3,
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digi,
@@ -34,7 +45,7 @@ const blogPosts = [
         profile: Profile1,
     },
     {
-        id: 3,
+        id: 4,
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
         image: Mtn,
@@ -43,7 +54,7 @@ const blogPosts = [
         profile: Profile2,
     },
     {
-        id: 4,
+        id: 5,
         title: "Leveraging Platform Specific Features For Digital Communication",
         excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
         image: Picbanner,
@@ -153,7 +164,7 @@ const Blog = () => {
                         <div
                             key={post.id}
                             onClick={() => handleReadMore(post.id)}
-                            className="bg-white cursor-pointer rounded-lg shadow-lg overflow-hidden flex flex-col">
+                            className="bg-white pl-2 md:pl-0 cursor-pointer rounded-lg shadow-lg overflow-hidden flex flex-col">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={post.image}

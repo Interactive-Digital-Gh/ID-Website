@@ -1,9 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 import experiencebg from "../../assets/service/experiencebg.png"
 
 const ExperienceDesign = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='overflow-hidden'>
             <div className="relative overflow-hidden">
@@ -103,9 +104,15 @@ const ExperienceDesign = () => {
             <section className="bg-[#F9F9F9] py-16 px-6 md:px-[100px] lg:px-[200px]">
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
-                        Our Services
-                    </h2>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 items-start gap-8 mb-12'>
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                            Our Services
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl">
+                            Building user-centric experiences that merge creativity with functionality
+                        </p>
+                    </div>
+
 
                     {/* === ROW 1 === */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
@@ -115,10 +122,7 @@ const ExperienceDesign = () => {
                                 UI/UX Design
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We design sleek, intuitive interfaces that look great and work great. No clunky clicks, just smart and smooth design your audience will love at first taps
                             </p>
                         </div>
 
@@ -133,7 +137,7 @@ const ExperienceDesign = () => {
                             <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
                                 <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
                                 <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
+                                    Beautiful to look at. Even better to use.
                                 </p>
                             </div>
                         </div>
@@ -152,7 +156,7 @@ const ExperienceDesign = () => {
                             <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
                                 <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
                                 <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
+                                    Smoother journeys, happier customers!
                                 </p>
                             </div>
                         </div>
@@ -163,10 +167,7 @@ const ExperienceDesign = () => {
                                 Service Design
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We map out every step of your customer’s journey and smooth out the messy bits. The result? A seamless experience that keeps people happy and your operations running like clockwork.
                             </p>
                         </div>
                     </div>
@@ -179,10 +180,7 @@ const ExperienceDesign = () => {
                                 Customer Journey Mapping
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We trace your audience’s journey, uncover what’s not working, and turn every bland moment into something worth remembering.
                             </p>
                         </div>
 
@@ -197,7 +195,7 @@ const ExperienceDesign = () => {
                             <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
                                 <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
                                 <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
+                                    Smoother journeys, happier customers!
                                 </p>
                             </div>
                         </div>
@@ -216,7 +214,7 @@ const ExperienceDesign = () => {
                             <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
                                 <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
                                 <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
+                                    Fast, scalable, and built with intention.
                                 </p>
                             </div>
                         </div>
@@ -227,10 +225,7 @@ const ExperienceDesign = () => {
                                 App/Platform Creation
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                We build responsive, scalable apps and platforms that are smooth to use and easy to love. Fast loads, zero fuss, and all the right reasons to keep users coming back.
                             </p>
                         </div>
                     </div>
