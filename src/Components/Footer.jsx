@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTumblr } from 'react-icons/fa';
 import footerlogo from "../assets/footerlogo.png"
 import { Link } from 'react-router-dom';
@@ -11,6 +10,32 @@ const Footer = () => {
 
     const [isPlaying, setIsPlaying] = useState(false)
     const videoRef = useRef(null);
+    const footerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    videoRef.current?.play().catch(() => { });
+                    setIsPlaying(true);
+                } else {
+                    videoRef.current?.pause();
+                    setIsPlaying(false);
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (footerRef.current) {
+            observer.observe(footerRef.current);
+        }
+
+        return () => {
+            if (footerRef.current) {
+                observer.unobserve(footerRef.current);
+            }
+        };
+    }, []);
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -23,7 +48,7 @@ const Footer = () => {
         }
     }
     return (
-        <div className="bg-[#303030] w-full lg:h-[458px] lg:py-20 py-4 text-white flex flex-col items-center lg:justify-center">
+        <div ref={footerRef} className="bg-[#303030] w-full lg:h-[458px] lg:py-20 py-4 text-white flex flex-col items-center lg:justify-center">
             <div className="lg:w-[1168px] w-full lg:h-[315px] h-auto flex lg:flex-row flex-col items-center justify-between lg:px-4 px-0">
                 {/* Brand Section */}
                 <div className="flex flex-col items-start lg:w-[270px] w-full lg:h-[287px] h-auto justify-between py-5 px-4 lg:px-0">

@@ -32,7 +32,7 @@ const CreativeTechnology = () => {
                             Crafting Immersive Experiences Through Creative Engineering
                         </h1>
                         <p className="text-gray-200 mt-4 text-[14px] sm:text-[16px] lg:text-[18px] font-light tracking-wide">
-                            Crafting Digital Excellence for Africa’s Ambitious Brand
+                            Crafting Digital Excellence for Africa's Ambitious Brand
                         </p>
                     </div>
                 </div>
@@ -42,66 +42,67 @@ const CreativeTechnology = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-8 mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
                             Our Services
                         </h2>
-                        <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl">
-                            We leverage the power of innovative tech to bring creative ideas to life and enhance brand experiences.                        </p>
+                        <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+                            We leverage the power of innovative tech to bring creative ideas to life and enhance brand experiences.
+                        </p>
                     </div>
 
                     {/* === ROW 1 === */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                         {/* Text Left */}
-                        <div>
-                            <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                        <div className="lg:pl-24">
+                            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                                 AR/VR Solutions
                             </h3>
-                            <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
+                            <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                                 We create AR and VR experiences your community wants to dive into. Fresh, fun, and unforgettable.
                             </p>
                         </div>
 
-                        {/* Image Right */}
-                        <div className="relative rounded-2xl overflow-hidden shadow-md">
+                        {/* Image Right - Overlapping */}
+                        <div className="relative">
                             <img
                                 src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?auto=format&fit=crop&w=900&q=80"
-                                alt="Vision AI Technology"
-                                className="w-full h-[300px] md:h-[350px] object-cover"
+                                alt="AR/VR Solutions"
+                                className="w-[85%] h-[300px] md:h-[350px] object-cover rounded-2xl shadow-md"
                                 loading="lazy"
                             />
-                            <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
-                                <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
-                                <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
-                                </p>
-                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                                alt="AR/VR Overlay"
+                                className="absolute -bottom-8 -right-4 w-[55%] h-[251px] object-cover rounded-2xl shadow-lg border-4 border-white"
+                                loading="lazy"
+                            />
                         </div>
                     </div>
 
                     {/* === ROW 2 === */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-                        {/* Image Left */}
-                        <div className="relative rounded-2xl overflow-hidden shadow-md order-2 lg:order-1">
+                        {/* Image Left - Overlapping */}
+                        <div className="relative order-2 lg:order-1">
                             <img
                                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
-                                alt="Vision AI Technology"
-                                className="w-full h-[300px] md:h-[350px] object-cover"
+                                alt="AI Implementations"
+                                className="w-[85%] ml-auto h-[300px] md:h-[350px] object-cover rounded-2xl shadow-md"
                                 loading="lazy"
                             />
-                            <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
-                                <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
-                                <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
-                                </p>
-                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80"
+                                alt="AI Overlay"
+                                className="absolute -bottom-8 -left-4 w-[55%] h-[251px] object-cover rounded-2xl shadow-lg border-4 border-white"
+                                loading="lazy"
+                            />
                         </div>
 
                         {/* Text Right */}
-                        <div className="order-1 lg:order-2">
-                            <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                        <div className="order-1 lg:order-2 lg:pr-24">
+                            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                                 AI Implementations
                             </h3>
-                            <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
+                            <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                                 We put AI to work for your brand. Think personalized experiences, streamlined processes, and creative output with a touch of future magic.
                             </p>
                         </div>
@@ -110,29 +111,29 @@ const CreativeTechnology = () => {
                     {/* === ROW 3 === */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                         {/* Text Left */}
-                        <div>
-                            <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
-                                AR/VR Solutions
+                        <div className="lg:pl-24">
+                            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                Interactive Installations
                             </h3>
-                            <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                We blend the physical and digital to create brand moments you can actually step into. It’s not just content; it’s an experience you can touch, explore, and remember.
+                            <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+                                We blend the physical and digital to create brand moments you can actually step into. It's not just content; it's an experience you can touch, explore, and remember.
                             </p>
                         </div>
 
-                        {/* Image Right */}
-                        <div className="relative rounded-2xl overflow-hidden shadow-md">
+                        {/* Image Right - Overlapping */}
+                        <div className="relative">
                             <img
                                 src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80"
-                                alt="Vision AI Technology"
-                                className="w-full h-[300px] md:h-[350px] object-cover"
+                                alt="Interactive Installations"
+                                className="w-[85%] h-[300px] md:h-[350px] object-cover rounded-2xl shadow-md"
                                 loading="lazy"
                             />
-                            <div className="absolute bottom-6 left-6 bg-gradient-to-r from-[#ED0707] to-[#870404] text-white p-4 rounded-xl shadow-lg max-w-[260px]">
-                                <h4 className="font-semibold text-lg mb-1">Vision AI Technology</h4>
-                                <p className="text-xs leading-relaxed opacity-90">
-                                    Our Technology AI Generator website empowers individuals
-                                </p>
-                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80"
+                                alt="Installation Overlay"
+                                className="absolute -bottom-8 -right-4 w-[55%] h-[251px] object-cover rounded-2xl shadow-lg border-4 border-white"
+                                loading="lazy"
+                            />
                         </div>
                     </div>
 

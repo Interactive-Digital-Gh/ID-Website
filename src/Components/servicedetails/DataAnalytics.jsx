@@ -22,6 +22,8 @@ const slides = [
             "Lorem ipsum dolor sit amet consectetur. Eu lobortis aliquet nec dui blandit faucibus proin vitae adipiscing.",
         image:
             "https://images.unsplash.com/photo-1510552776732-03e61cf4b144?auto=format&fit=crop&w=900&q=80",
+        overlayImage:
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
         tech: [FaCss3Alt, FaHtml5, FaPython, FaWordpress, FaReact],
     },
     {
@@ -32,6 +34,8 @@ const slides = [
             "We help brands connect with audiences through visual storytelling and impactful digital experiences.",
         image:
             "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
+        overlayImage:
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
         tech: [FaHtml5, FaCss3Alt, FaReact, FaWordpress, FaPython],
     },
 ];
@@ -119,7 +123,7 @@ const DataAnalytics = () => {
                             Crafting Immersive Experiences Through Creative Engineering
                         </h1>
                         <p className="text-gray-200 mt-4 text-[14px] sm:text-[16px] lg:text-[18px] font-light tracking-wide">
-                            Crafting Digital Excellence for Africa’s Ambitious Brand
+                            Crafting Digital Excellence for Africa's Ambitious Brand
                         </p>
                     </div>
                 </div>
@@ -128,7 +132,7 @@ const DataAnalytics = () => {
             <main className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center px-4 lg:px-[200px] 4xl:px-[400px] py-20">
                 {/* Header */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-20">
-                    <h1 className="text-4xl font-bold tracking-tight">Our Services</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight">Our Services</h1>
                     <div className="lg:col-span-2">
                         <p className="text-gray-600 text-lg leading-relaxed">
                             From our roots as a dynamic social media agency, we've evolved into
@@ -154,24 +158,29 @@ const DataAnalytics = () => {
                                 transition={{ duration: 0.6, ease: "easeInOut" }}
                                 className="absolute inset-0 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
                             >
-                                {/* Left: Image */}
-                                <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                                {/* Left: Overlapping Image */}
+                                <div className="relative">
                                     <img
                                         src={slides[current].image}
                                         alt={slides[current].title}
-                                        className="w-full h-[400px] object-cover rounded-2xl"
+                                        className="w-[85%] h-[300px] md:h-[350px] object-cover rounded-2xl shadow-md"
+                                    />
+                                    <img
+                                        src={slides[current].overlayImage}
+                                        alt={`${slides[current].title} overlay`}
+                                        className="absolute -bottom-8 -right-4 w-[55%] h-[251px] object-cover rounded-2xl shadow-lg border-4 border-white"
                                     />
                                 </div>
 
                                 {/* Right: Text */}
-                                <div>
+                                <div className="lg:pl-24">
                                     <p className="text-sm text-gray-400 mb-2 uppercase tracking-wide">
                                         {slides[current].category}
                                     </p>
-                                    <h2 className="text-2xl md:text-3xl font-semibold mb-3">
+                                    <h2 className="text-3xl md:text-4xl font-bold mb-3">
                                         {slides[current].title}
                                     </h2>
-                                    <p className="text-gray-600 mb-6 leading-relaxed">
+                                    <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                                         {slides[current].description}
                                     </p>
 

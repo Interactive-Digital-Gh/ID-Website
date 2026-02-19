@@ -68,7 +68,7 @@ const InnovationConsulting = () => {
                             Our Services
                         </h2>
                         <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl">
-                            From our roots as a dynamic social media agency, we've evolved into West Africa's emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter.
+                            We help your brand to adapt, disrupt, and lead in a digital-first world
                         </p>
                     </div>
 
@@ -80,8 +80,7 @@ const InnovationConsulting = () => {
                                 Digital Transformation
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into West Africa's emerging digital powerhouse. Founded on the principle that authentic connections drive business growth, we combine deep local insights with global digital excellence to deliver results that matter..
-
+                                We give your business the upgrade it didn't know it needed. Smarter tools, faster workflows, and way less head-scratching. so your team can stop spinning wheels and start crushing goals.
                             </p>
                         </div>
 
@@ -126,10 +125,7 @@ const InnovationConsulting = () => {
                                 Innovation Workshop
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                Think big ideas, sticky notes, and just the right amount of chaos. These sessions get teams aligned, creativity flowing, and plans moving from talk to action.
                             </p>
                         </div>
                     </div>
@@ -142,10 +138,7 @@ const InnovationConsulting = () => {
                                 Emerging Technologies
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm md:text-base max-w-lg">
-                                From our roots as a dynamic social media agency, we've evolved into
-                                West Africa's emerging digital powerhouse. Founded on the principle
-                                that authentic connections drive business growth, we combine deep local
-                                insights with global digital excellence to deliver results that matter.
+                                From AI to whatever comes next, we plug in the right tech to boost your business and create smoother, smarter customer experiences that actually stick.
                             </p>
                         </div>
 
