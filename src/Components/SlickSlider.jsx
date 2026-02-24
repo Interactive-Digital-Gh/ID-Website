@@ -61,10 +61,6 @@ He passionately believes in the transformative impact of data and technology on 
     // Additional board members can be added here...
 ];
 
-useEffect(() => {
-  fetch('/api/data')
-}, [])
-
 const SlickSlider = () => {
     const sliderRef = React.useRef(null);
     const [hoveredIndex, setHoveredIndex] = useState(null);
