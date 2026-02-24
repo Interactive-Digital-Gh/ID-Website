@@ -1,4 +1,4 @@
-name: Deploy ID Website-Live
+name: Deploy ID Website
 
 on:
   push:

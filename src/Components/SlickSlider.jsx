@@ -6,10 +6,10 @@ import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import Team1 from "../assets/slider/team1.png"
 import Team2 from "../assets/slider/team2.png"
 
-import Fred1 from "../assets/slider/Fred1.jpg"
-import Fred2 from "../assets/slider/Fred2.jpg"
-import Kofi from "../assets/slider/Kofi.jpg"
-import Kofi2 from "../assets/slider/Kofi2.jpg"
+import Fred1 from "../assets/slider/fred1.jpg"
+import Fred2 from "../assets/slider/fred2.jpg"
+import Kofi from "../assets/slider/kofi.jpg"
+import Kofi2 from "../assets/slider/kofi2.jpg"
 
 import Jasmine from "../assets/slider/jasmine.jpg"
 import Jasmine1 from "../assets/slider/jasmine2.jpg"
