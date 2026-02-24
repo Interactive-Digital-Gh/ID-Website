@@ -26,19 +26,33 @@ jobs:
             sudo systemctl reload nginx
 
   deploy-staging:
-    if: github.ref == 'refs/heads/staging'
-    runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/staging'
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Deploy Staging
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ vars.PROD_SERVER_HOST }}
-          username: ${{ vars.PROD_SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            cd /var/www/staging/ID-Website
-            git pull origin staging
-            npm ci
-            npm run build
-            sudo systemctl reload nginx
+        steps:
+          - name: Deploy Staging
+            uses: appleboy/ssh-action@v1.0.3
+            with:
+              host: ${{ vars.STAGING_SERVER_HOST }}
+              username: ${{ vars.STAGING_SERVER_USER }}
+              key: ${{ secrets.SERVER_SSH_KEY }}
+              script: |
+                set -e
+
+                echo "Switching to staging directory"
+                cd /var/www/staging/ID-Website
+
+                echo "Pulling latest code"
+                git pull origin staging
+
+                echo "Installing dependencies"
+                npm ci
+
+                echo "Building project"
+                npm run build
+
+                echo "Verifying dist exists"
+                ls -la dist
+
+                echo "Reloading nginx"
+                sudo systemctl reload nginx
