@@ -1,0 +1,24 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.PROD_SERVER_HOST }}
+          username: ${{ vars.PROD_SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /var/www/ID-projects/ID-Website
+            git pull origin main
+            npm ci
+            npm run build
+            sudo systemctl reload nginx
