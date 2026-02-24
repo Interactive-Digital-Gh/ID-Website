@@ -19,6 +19,6 @@ jobs:
           script: |
             cd /var/www/ID-projects/ID-Website
             git pull origin main
-            npm ci
+            npm install
             npm run build
             sudo systemctl reload nginx
