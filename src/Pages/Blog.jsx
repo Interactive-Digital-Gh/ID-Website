@@ -98,8 +98,11 @@ const Blog = () => {
             {/* Blog Banner */}
             <div className="relative">
                 <img src={blogbanner} alt="about" className="object-cover w-full h-[400px]" loading="lazy" />
-                <div className="absolute lg:top-[285px] top-[60%] lg:left-[195px] left-[15%] lg:w-[858px] lg:h-[72px] flex flex-col gap-2">
-                    <h2 className="text-[40px] font-medium text-white">Latest news</h2>
+                <div className="absolute top-[325px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[30%] lg:w-[558px]">
+                    <h2 className="text-[40px] font-bold text-white text-center">
+                        Latest news
+                    </h2>
+
                 </div>
             </div>
 

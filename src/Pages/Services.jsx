@@ -22,11 +22,11 @@ const Services = () => {
                 <img
                     src={servicebg}
                     alt="about"
-                    className="object-cover w-full lg:h-full h-[500px]"
+                    className="object-cover w-full lg:h-[400px] h-[500px]"
                     loading="lazy"
                 />
                 <div className="absolute top-[325px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[30%] lg:w-[558px]">
-                    <h2 className="text-[48px] font-bold text-white text-center">
+                    <h2 className="text-[40px] font-bold text-white text-center">
                         Our Services
                     </h2>
 
@@ -39,10 +39,10 @@ const Services = () => {
                             <img
                                 src={service1}
                                 alt="about"
-                                className="object-cover lg:w-[600px] w-full h-[250px]"
+                                className="object-cover lg:w-[600px] w-full h-[250px] rounded-lg"
                                 loading="lazy"
                             />
-                            <a href="/strategy" className="absolute lg:top-1/2 top-[60%] ml-2 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px]">
+                            <a href="/strategy" className="absolute lg:top-1/2 top-[60%] ml-2 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px] rounded-lg">
                                 <h2 className="lg:text-2xl text-[20px] font-bold mb-2">Brand Development</h2>
                                 <p className="text-gray-600 lg:text-base text-[14px] mb-2">
                                     We craft unique, powerful, and future-ready brands
@@ -65,7 +65,7 @@ const Services = () => {
                             {/* Card Section */}
                             <a
                                 href="/production"
-                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg py-1 px-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
+                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg py-1 px-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right rounded-lg"
                                 style={{ marginRight: "-100px" }} /* Overlap onto the image */
                             >
                                 <h2 className="text-2xl font-bold mb-2">Content Production</h2>
@@ -86,7 +86,7 @@ const Services = () => {
                             <img
                                 src={service2}
                                 alt="about"
-                                className="object-cover lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
+                                className="object-cover rounded-lg lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
                                 loading="lazy"
                             />
                         </div>
@@ -99,10 +99,10 @@ const Services = () => {
                             <img
                                 src={service3}
                                 alt="about"
-                                className="object-cover lg:w-[600px] w-full h-[250px]"
+                                className="object-cover rounded-lg lg:w-[600px] w-full h-[250px]"
                                 loading="lazy"
                             />
-                            <a href="/experience" className="absolute lg:top-1/2 top-[60%] ml-6 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px]">
+                            <a href="/experience" className="absolute rounded-lg lg:top-1/2 top-[60%] ml-6 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px]">
                                 <h2 className="lg:text-2xl text-[20px] font-bold mb-2">Experience Design</h2>
                                 <p className="text-gray-600 lg:text-base text-[14px] mb-2">
                                     Building user-centric experiences that merge creativity with functionality
@@ -126,7 +126,7 @@ const Services = () => {
                             {/* Card Section */}
                             <a
                                 href="/creative"
-                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg p-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
+                                className="absolute lg:top-1/2 top-[63%] rounded-lg lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg p-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
                                 style={{ marginRight: "-100px" }} /* Overlap onto the image */
                             >
                                 <h2 className="text-2xl font-bold mb-2">Creative Technology</h2>
@@ -147,7 +147,7 @@ const Services = () => {
                             <img
                                 src={service4}
                                 alt="about"
-                                className="object-cover lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
+                                className="object-cover rounded-lg lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
                                 loading="lazy"
                             />
                         </div>
@@ -160,10 +160,10 @@ const Services = () => {
                             <img
                                 src={service3}
                                 alt="about"
-                                className="object-cover lg:w-[600px] w-full h-[250px]"
+                                className="object-cover rounded-lg lg:w-[600px] w-full h-[250px]"
                                 loading="lazy"
                             />
-                            <a href="/analytics" className="absolute lg:top-1/2 top-[60%] ml-6 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px]">
+                            <a href="/analytics" className="absolute rounded-lg lg:top-1/2 top-[60%] ml-6 lg:right-0 transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg border-b-2 border-gray-300 py-1 px-8 lg:w-[650px] w-[350px] lg:h-[220px]">
                                 <h2 className="lg:text-2xl text-[20px] font-bold mb-2">Data and Analytics</h2>
                                 <p className="text-gray-600 lg:text-base text-[14px] mb-2">
                                     We harness data and analytics to uncover valuable insights that fuel smart decision-making and growth
@@ -186,7 +186,7 @@ const Services = () => {
                             {/* Card Section */}
                             <a
                                 href="/consulting"
-                                className="absolute lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg p-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
+                                className="absolute rounded-lg lg:top-1/2 top-[63%] lg:left-0 left-[7%] transform -translate-y-1/2 bg-[#F4F4F4] hover:bg-slate-200 shadow-lg p-6 lg:w-[650px] w-[350px] lg:h-[220px] z-10 lg:text-right"
                                 style={{ marginRight: "-100px" }} /* Overlap onto the image */
                             >
                                 <h2 className="text-2xl font-bold mb-2">Innovation Consulting</h2>
@@ -207,7 +207,7 @@ const Services = () => {
                             <img
                                 src={service4}
                                 alt="about"
-                                className="object-cover lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
+                                className="object-cover rounded-lg lg:w-[600px] lg:h-full h-[250px] absolute top-0 right-0"
                                 loading="lazy"
                             />
                         </div>

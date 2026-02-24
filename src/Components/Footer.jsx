@@ -129,16 +129,16 @@ const Footer = () => {
             </div>
 
             {/* Copyright Section */}
-            <div className="border-t border-gray-700 lg:w-[1000px] flex justify-between mt-8 pt-4 px-4 lg:px-0 text-gray-400 text-sm">
+            <div className="border-t border-gray-700 lg:w-[1000px] flex justify-center mt-8 pt-4 px-4 lg:px-0 text-gray-400 text-sm">
                 <span>
                     @ 2024 interactivedigital. All rights reserved.
                 </span>
-                <div className="flex space-x-4">
+                {/* <div className="flex space-x-4">
                     <a href="#"><FaFacebook className="text-white text-xl hover:text-[#FF0226]" /></a>
                     <a href="#"><FaTwitter className="text-white text-xl hover:text-[#FF0226]" /></a>
                     <a href="#"><FaLinkedin className="text-white text-xl hover:text-[#FF0226]" /></a>
                     <a href="#"><FaInstagram className="text-white text-xl hover:text-[#FF0226]" /></a>
-                </div>
+                </div> */}
             </div>
         </div>
     );

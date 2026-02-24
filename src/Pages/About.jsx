@@ -113,11 +113,11 @@ const About = () => {
                 <img
                     src={aboutbg}
                     alt="about"
-                    className="object-cover w-full lg:h-full h-[700px]"
+                    className="object-cover w-full lg:h-[400px] h-[700px]"
                     loading="lazy"
                 />
                 <div className="absolute top-[325px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[20%] lg:w-[558px]">
-                    <h2 className="text-3xl font-bold text-white text-center">
+                    <h2 className="text-3xl font-bold bg-red-500 text-white text-center">
                         CRAFTING DIGITAL EXCELLENCE FOR AFRICA'S AMBITIOUS BRANDS
                     </h2>
                     <p className="text-white text-opacity-80 text-sm lg:text-base lg:w-[800px] text-left">
@@ -273,7 +273,7 @@ const About = () => {
                         />
                     </div>
 
-                    <div data-aos="fade-left" className="absolute lg:top-[45%] top-[30%] lg:left-[50%] 4xl:left-[58%] p-4 lg:w-[460px] h-[130px] bg-[#ED0707] rounded-[20px] bg-opacity-70">
+                    <div data-aos="fade-left" className="absolute lg:top-[45%] top-[30%] lg:left-[50%] 4xl:left-[58%] p-4 lg:w-[460px] h-[130px] bg-[#ED0707] rounded-[20px] bg-opacity-90">
                         <p className="text-white">
                             Mission :<br />
                             To deliver innovative and impactful communication solutions
@@ -301,7 +301,7 @@ const About = () => {
                     />
 
                     {/* Content Section */}
-                    <div className="relative lg:absolute lg:bottom-0 lg:left-[280px] 4xl:left-[500px] w-full lg:w-[900px] h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white">
+                    <div className="relative lg:absolute lg:bottom-0 lg:left-[280px] 4xl:left-[500px] w-full lg:w-[900px] h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white rounded-lg">
                         {/* Left Content */}
                         <div className="flex flex-col flex-1 px-6 py-6 lg:pl-10 lg:pt-[70px]">
                             <div className="w-full lg:w-[350px]">
@@ -347,7 +347,7 @@ const About = () => {
                             <img
                                 src={about4}
                                 alt="about"
-                                className="object-cover w-full h-[300px] lg:h-[460px]"
+                                className="object-cover w-full h-[300px] lg:h-[460px] rounded-lg"
                                 loading="lazy"
                             />
                         </div>
@@ -364,7 +364,7 @@ const About = () => {
                             <img
                                 src={about5}
                                 alt="about"
-                                className="object-cover w-full h-[200px] lg:h-full 4xl:w-[600px]"
+                                className="object-cover w-full h-[200px] lg:h-full 4xl:w-[600px] rounded-lg"
                                 loading="lazy"
                             />
                         </div>
@@ -412,7 +412,7 @@ const About = () => {
                             <img
                                 src={about6}
                                 alt="about"
-                                className="object-cover w-full h-[200px] 4xl:w-[600px] lg:h-full"
+                                className="object-cover w-full h-[200px] 4xl:w-[600px] lg:h-full rounded-lg"
                                 loading="lazy"
                             />
                         </div>

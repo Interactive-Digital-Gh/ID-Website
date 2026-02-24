@@ -22,13 +22,13 @@ const DigitalStrategy = () => {
                 <img
                     src={servicesbg}
                     alt="services background"
-                    className="object-cover w-full lg:h-[80vh] h-[500px] brightness-[0.45]"
+                    className="object-cover w-full lg:h-[400px] h-[500px] brightness-[0.45]"
                     loading="lazy"
                 />
 
 
                 {/* Text Content - middle left */}
-                <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-12 md:px-[100px] lg:px-[200px] 4xl:pl-[400px] text-left">
+                <div className="absolute md:top-[60%] top-[50%] left-0 translate-y-[-50%] flex flex-col justify-center px-6 sm:px-12 md:px-[100px] lg:px-[200px] 4xl:pl-[400px] text-left">
                     <div className="max-w-3xl">
                         <h1 className="text-white font-bold text-[32px] sm:text-[42px] lg:text-[54px] leading-tight drop-shadow-lg">
                             Crafting Digital Excellence for

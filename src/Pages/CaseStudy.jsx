@@ -25,7 +25,7 @@ const CaseStudy = () => {
             <div className="relative">
                 <img src={servicebg} alt="about" className="object-cover w-full h-[400px]" loading="lazy" />
                 <div className="absolute top-[245px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[30%] lg:w-[558px]">
-                    <h2 className="lg:text-[48px] text-[30px] font-bold text-white text-center">Our Case Studies</h2>
+                    <h2 className="lg:text-[40px] text-[30px] font-bold text-white text-center">Our Case Studies</h2>
                 </div>
             </div>
 
