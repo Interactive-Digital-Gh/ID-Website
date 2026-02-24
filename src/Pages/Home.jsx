@@ -22,7 +22,7 @@ import Brands from "../Components/Brands"
 
 import strategyBg from "../assets/service/stratbg.png";
 import creativeBg from "../assets/service/creativeBg.png";
-import techBg from "../assets/service/techbg.png";
+import techBg from "../assets/service/techBg.png";
 import marketingBg from "../assets/service/marketingbg.png";
 
 
