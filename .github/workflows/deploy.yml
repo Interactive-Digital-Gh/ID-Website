@@ -17,8 +17,27 @@ jobs:
           username: ${{ vars.PROD_SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            set -e
+
             cd /var/www/ID-projects/ID-Website
+
+            echo "Current directory:"
+            pwd
+
+            echo "Pulling latest code..."
             git pull origin main
-            npm install
+
+            echo "Node version:"
+            node -v
+
+            echo "Installing dependencies..."
+            npm ci
+
+            echo "Building app..."
             npm run build
+
+            echo "Checking dist folder..."
+            ls -la dist
+
+            echo "Reloading nginx..."
             sudo systemctl reload nginx
