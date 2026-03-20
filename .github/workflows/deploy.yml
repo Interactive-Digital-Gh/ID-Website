@@ -1,43 +1,58 @@
-name: Deploy React App
+name: Deploy ID Website
 
 on:
   push:
     branches:
       - main
+      - staging
 
 jobs:
-  deploy:
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH
+      - name: Deploy Production
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ vars.PROD_SERVER_HOST }}
           username: ${{ vars.PROD_SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            set -e
-
-            cd /var/www/ID-projects/ID-Website
-
-            echo "Current directory:"
-            pwd
-
-            echo "Pulling latest code..."
+            cd /var/www/production/ID-Website
             git pull origin main
-
-            echo "Node version:"
-            node -v
-
-            echo "Installing dependencies..."
             npm ci
-
-            echo "Building app..."
             npm run build
-
-            echo "Checking dist folder..."
-            ls -la dist
-
-            echo "Reloading nginx..."
             sudo systemctl reload nginx
+
+  deploy-staging:
+        if: github.ref == 'refs/heads/staging'
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Deploy Staging
+            uses: appleboy/ssh-action@v1.0.3
+            with:
+              host: ${{ vars.PROD_SERVER_HOST }}
+              username: ${{ vars.PROD_SERVER_USER }}
+              key: ${{ secrets.SERVER_SSH_KEY }}
+              script: |
+                set -e
+
+                echo "Switching to staging directory"
+                cd /var/www/staging/ID-Website
+
+                echo "Pulling latest code"
+                git pull origin staging
+
+                echo "Installing dependencies"
+                npm ci
+
+                echo "Building project"
+                npm run build
+
+                echo "Verifying dist exists"
+                ls -la dist
+
+                echo "Reloading nginx"
+                sudo systemctl reload nginx
