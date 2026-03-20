@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTumblr } from 'react-icons/fa';
 import footerlogo from "../assets/footerlogo.png"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Play, Pause } from 'lucide-react'
 import video from "../assets/videobg.mp4"
 import PrivacyModal from './PrivacyModal';
@@ -13,6 +13,8 @@ const Footer = () => {
     const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
     const videoRef = useRef(null);
     const footerRef = useRef(null);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -38,6 +40,28 @@ const Footer = () => {
             }
         };
     }, []);
+
+    // Effect to handle URL-based triggering of Privacy Modal
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        if (location.hash === '#privacy' || searchParams.get('privacy') === 'true') {
+            setIsPrivacyOpen(true);
+        }
+    }, [location]);
+
+    const handlePrivacyOpen = () => {
+        setIsPrivacyOpen(true);
+        navigate('#privacy', { replace: true });
+    };
+
+    const handlePrivacyClose = () => {
+        setIsPrivacyOpen(false);
+        // Clean up the hash/query param if needed, or leave it. 
+        // If we want to clean it up:
+        if (location.hash === '#privacy') {
+            navigate(location.pathname + location.search, { replace: true });
+        }
+    };
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -136,7 +160,7 @@ const Footer = () => {
                     @ {new Date().getFullYear()} interactivedigital. All rights reserved.
                 </span>
                 <button 
-                    onClick={() => setIsPrivacyOpen(true)}
+                    onClick={handlePrivacyOpen}
                     className="ml-6 hover:text-[#FF0226] transition-colors cursor-pointer"
                 >
                     Privacy Policy
@@ -148,7 +172,7 @@ const Footer = () => {
                     <a href="#"><FaInstagram className="text-white text-xl hover:text-[#FF0226]" /></a>
                 </div> */}
             </div>
-            <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+            <PrivacyModal isOpen={isPrivacyOpen} onClose={handlePrivacyClose} />
         </div>
     );
 };
