@@ -4,13 +4,11 @@ import footerlogo from "../assets/footerlogo.png"
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Play, Pause } from 'lucide-react'
 import video from "../assets/videobg.mp4"
-import PrivacyModal from './PrivacyModal';
 
 
 const Footer = () => {
 
     const [isPlaying, setIsPlaying] = useState(false)
-    const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
     const videoRef = useRef(null);
     const footerRef = useRef(null);
     const location = useLocation();
@@ -41,27 +39,7 @@ const Footer = () => {
         };
     }, []);
 
-    // Effect to handle URL-based triggering of Privacy Modal
-    useEffect(() => {
-        const searchParams = new URLSearchParams(location.search);
-        if (location.hash === '#privacy' || searchParams.get('privacy') === 'true') {
-            setIsPrivacyOpen(true);
-        }
-    }, [location]);
-
-    const handlePrivacyOpen = () => {
-        setIsPrivacyOpen(true);
-        navigate('#privacy', { replace: true });
-    };
-
-    const handlePrivacyClose = () => {
-        setIsPrivacyOpen(false);
-        // Clean up the hash/query param if needed, or leave it. 
-        // If we want to clean it up:
-        if (location.hash === '#privacy') {
-            navigate(location.pathname + location.search, { replace: true });
-        }
-    };
+    // No longer need hash-based privacy modal triggering
 
     const togglePlay = () => {
         if (videoRef.current) {
@@ -159,12 +137,18 @@ const Footer = () => {
                 <span>
                     @ {new Date().getFullYear()} interactivedigital. All rights reserved.
                 </span>
-                <button 
-                    onClick={handlePrivacyOpen}
+                <Link 
+                    to="/privacy"
                     className="ml-6 hover:text-[#FF0226] transition-colors cursor-pointer"
                 >
                     Privacy Policy
-                </button>
+                </Link>
+                <Link 
+                    to="/terms"
+                    className="ml-6 hover:text-[#FF0226] transition-colors cursor-pointer"
+                >
+                    Terms & Conditions
+                </Link>
                 {/* <div className="flex space-x-4">
                     <a href="#"><FaFacebook className="text-white text-xl hover:text-[#FF0226]" /></a>
                     <a href="#"><FaTwitter className="text-white text-xl hover:text-[#FF0226]" /></a>
@@ -172,7 +156,6 @@ const Footer = () => {
                     <a href="#"><FaInstagram className="text-white text-xl hover:text-[#FF0226]" /></a>
                 </div> */}
             </div>
-            <PrivacyModal isOpen={isPrivacyOpen} onClose={handlePrivacyClose} />
         </div>
     );
 };
