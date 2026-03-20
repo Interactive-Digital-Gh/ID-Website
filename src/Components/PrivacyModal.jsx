@@ -6,14 +6,14 @@ const PrivacyModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div 
+      <div
         className="relative bg-white w-full max-w-2xl max-h-[80vh] overflow-hidden rounded-2xl shadow-2xl flex flex-col animate-in zoom-in-95 duration-300"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
-          <h2 className="text-2xl font-bold text-gray-900 leading-tight">Interactive Digital Privacy Statement</h2>
-          <button 
+          <h2 className="text-2xl font-bold text-gray-900 leading-tight">Privacy Statement</h2>
+          <button
             onClick={onClose}
             className="p-2 hover:bg-gray-200 rounded-full transition-colors text-gray-500 hover:text-gray-900"
           >
@@ -101,7 +101,7 @@ const PrivacyModal = ({ isOpen, onClose }) => {
 
         {/* Footer */}
         <div className="p-6 border-t border-gray-100 bg-gray-50/50 flex justify-end">
-          <button 
+          <button
             onClick={onClose}
             className="px-6 py-2 bg-[#FF0226] text-white font-semibold rounded-full hover:bg-black transition-all duration-300 shadow-lg shadow-red-500/20"
           >
