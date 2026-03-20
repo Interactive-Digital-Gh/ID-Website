@@ -20,6 +20,8 @@ import ContentProduction from './Components/servicedetails/ContentProduction'
 import CreativeTechnology from './Components/servicedetails/CreativeTechnology'
 import InnovationConsulting from './Components/servicedetails/InnovationConsulting'
 import DataAnalytics from './Components/servicedetails/DataAnalytics'
+import Terms from './Pages/Terms'
+import Privacy from './Pages/Privacy'
 
 function App() {
 
@@ -42,6 +44,8 @@ function App() {
           <Route path='/creative' element={<CreativeTechnology />} />
           <Route path='/consulting' element={<InnovationConsulting />} />
           <Route path='/analytics' element={<DataAnalytics />} />
+          <Route path='/terms' element={<Terms />} />
+          <Route path='/privacy' element={<Privacy />} />
 
           <Route path='/mtndetail' element={<MtnDetail />} />
 
