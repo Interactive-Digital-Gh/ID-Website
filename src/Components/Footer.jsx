@@ -4,11 +4,13 @@ import footerlogo from "../assets/footerlogo.png"
 import { Link } from 'react-router-dom';
 import { Play, Pause } from 'lucide-react'
 import video from "../assets/videobg.mp4"
+import PrivacyModal from './PrivacyModal';
 
 
 const Footer = () => {
 
     const [isPlaying, setIsPlaying] = useState(false)
+    const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
     const videoRef = useRef(null);
     const footerRef = useRef(null);
 
@@ -59,7 +61,7 @@ const Footer = () => {
                         <p className="text-gray-400 mt-2 w-full h-[100px] text-[16px] font-normal leading-[25px]">
                             Creates compelling online experiences in digital media for great brands.
                             <br />
-                            <span className="text-[#FF0226] font-semibold">2024.</span>
+                            <span className="text-[#FF0226] font-semibold">{new Date().getFullYear()}.</span>
                         </p>
                     </div>
                     <div className="flex space-x-4 lg:mt-4 mt-0">
@@ -131,8 +133,14 @@ const Footer = () => {
             {/* Copyright Section */}
             <div className="border-t border-gray-700 lg:w-[1000px] flex justify-center mt-8 pt-4 px-4 lg:px-0 text-gray-400 text-sm">
                 <span>
-                    @ 2024 interactivedigital. All rights reserved.
+                    @ {new Date().getFullYear()} interactivedigital. All rights reserved.
                 </span>
+                <button 
+                    onClick={() => setIsPrivacyOpen(true)}
+                    className="ml-6 hover:text-[#FF0226] transition-colors cursor-pointer"
+                >
+                    Privacy Policy
+                </button>
                 {/* <div className="flex space-x-4">
                     <a href="#"><FaFacebook className="text-white text-xl hover:text-[#FF0226]" /></a>
                     <a href="#"><FaTwitter className="text-white text-xl hover:text-[#FF0226]" /></a>
@@ -140,6 +148,7 @@ const Footer = () => {
                     <a href="#"><FaInstagram className="text-white text-xl hover:text-[#FF0226]" /></a>
                 </div> */}
             </div>
+            <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
         </div>
     );
 };
