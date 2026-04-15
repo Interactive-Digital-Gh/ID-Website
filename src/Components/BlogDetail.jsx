@@ -6,7 +6,7 @@ import Mtn from "../assets/blog/mtn.png";
 import Mtn1 from "../assets/blog/mtn1.png";
 import Mtn2 from "../assets/blog/mtnbanner.png";
 import Picbanner from "../assets/blog/picbanner.png";
-import Picmainbanner from "../assets/blog/picmainbanner.png";
+import scefbanner from "../assets/blog/job_banner.jpg";
 import Pic1 from "../assets/blog/Picture 1.jpg"
 import Pic2 from "../assets/blog/Picture 2.jpg"
 import Profile1 from "../assets/blog/profile1.jpg";
@@ -104,6 +104,23 @@ const blogPosts = [
         content: `Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding. But by fully grasping how these features work, we can enhance the effectiveness of digital communication strategies. As part of efforts to equip students with practical knowledge and skills to harness the features of digital platforms in their academic and professional endeavors, Interactive Digital’s IDea Bootcamp in partnership with University of Ghana held a lecture at the University of Ghana on 7th June 2024. Two seasoned professionals from Interactive Digital; Fredrick Tackie-Yarboi and Jade Appiah-Lartey tutored on ways in which the Features of Digital Platforms can be leveraged for optimum Digital Communications. `,
         content1: `The facilitators began the session amidst an atmosphere of curiosity, asking the students about the various digital platforms they are familiar with, their features and how they utilize them to connect with each other.  Most of the students shared their first- hand experience with some features of the most popular digital platforms. The prevailing notion throughout the interactive session was that most of the students are familiar with the features of the predominant digital platforms but do not fully understand their potential. To better understand the topic at hand, Fred provided a comprehensive overview of the intricacies of digital platform features spanning Multimedia sharing, Messaging and chats, Content creation tools, Interactive features of tools, Analytics and metrics, Community Building, Advertising and promotion, Event Management, Collaborative Events and Customized profiles pages.`,
         content2: `Towards the end, the facilitators had an engagement session where they answered a range of questions from the students. Overall, the students gathered a deep understanding of platform – specific features and how they can harness them in their future career in Digital Communications. Interactive Digital’s IDea Bootcamp initiative is committed to sharing practical knowledge and industry expertise. Idea Bootcamp is not merely a trend, but a deliberate effort towards impacting knowledge to create a more robust and agile workforce for the future.`,
+    },
+    {
+        id: 6,
+        title: "Going Beyond the Digital Canvas: Interactive Digital paints smiles on the faces of street-connected children for Christmas.",
+        excerpt: "Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.",
+        image: scefbanner,
+        author: "Philomina Akekudaga",
+        date: "December 29, 2023",
+        profile: Profile3,
+        content: `Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.`,
+        content1: `The heartwarming event unfolded at the Accra Rehabilitation Center, where we played Santa through donations in cash and kind gestures, spreading Christmas cheer with over 100 street-connected children and children in vulnerable situations all over Accra.`,
+        content2: `Our commitment to making a positive social impact was evident during the event that took place on the 29th of December, 2023 as employees volunteered time off to spread the joy of the season with the children at SCEF. In a true display of the Christmas spirit, we demonstrated the agency's ongoing commitment to give back to the local community, leaving a lasting impression on the most vulnerable members of our society.`,
+        content3: `From dancing competitions to face painting, bouncy castles, and drama, the children enjoyed a range of engaging activities. Each child left not just with a full belly, but also with some new clothes.`,
+        header1: "Transforming Lives Through Collective Action",
+        content7: `"We believe not only in the transformative power of collective action especially during a season like this but more importantly, in ensuring that the smiles on these little faces never stop beaming. Our collaboration with SCEF allows us to contribute to the well-being of these beautiful children and we are humbled to have been allowed to contribute to transforming their lives." Oluwatoyin Opeodu, Senior Account Manager, highlighted during the event.`,
+        header2: "Compassion Beyond Profits",
+        content8: `Speaking in an interview after the event, Ekow Thompson, Chief Operating Officer, emphasized on the need for Corporate Social Investment. “As a company, we firmly believe that success should not only be measured in profits but also in the positive change we bring to the communities we serve. Investing in social impact programs, such as supporting these beautiful little souls is not just a one-off activity; it is an opportunity to make a real difference in their future lives. This partnership is a testament to the power of compassion, reminding us that every act of kindness, no matter how small, has the potential to light up and transform lives.”`
     },
 ];
 
@@ -223,7 +240,7 @@ const BlogDetail = () => {
                                     <img
                                         src={blogPost.photo2}
                                         alt="Blog detail"
-                                        className="md:w-[317px] h-[300px] object-cover rounded-lg"
+                                        className="md:w-[317px] h-[400px] object-cover rounded-lg"
                                         loading="lazy"
                                     />
                                 )}

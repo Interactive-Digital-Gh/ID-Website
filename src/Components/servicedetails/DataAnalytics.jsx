@@ -19,7 +19,7 @@ const slides = [
         title: "Digital Transformation",
         category: "Category",
         description:
-            "Lorem ipsum dolor sit amet consectetur. Eu lobortis aliquet nec dui blandit faucibus proin vitae adipiscing.",
+            "We empower businesses by integrating advanced digital technologies to drive innovation, optimize operations, and enhance customer experiences.",
         image:
             "https://images.unsplash.com/photo-1510552776732-03e61cf4b144?auto=format&fit=crop&w=900&q=80",
         overlayImage:

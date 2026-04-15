@@ -1,5 +1,7 @@
 import Mtn from "../assets/blog/mtn.png"
 import Picbanner from "../assets/blog/picbanner.png";
+import scefthumb from "../assets/blog/joy1.jpg";
+
 
 import Digi from "../assets/blog/digi.jpg";
 
@@ -60,6 +62,15 @@ const blogPosts = [
         image: Picbanner,
         author: "Philomina Akekudaga",
         date: "June 07, 2024",
+        profile: Profile3,
+    },
+    {
+        id: 6,
+        title: "Going Beyond the Digital Canvas: Interactive Digital paints smiles on the faces of street-connected children for Christmas.",
+        excerpt: "Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.",
+        image: scefthumb,
+        author: "Philomina Akekudaga",
+        date: "December 29, 2023",
         profile: Profile3,
     },
 ];
