@@ -1,7 +1,9 @@
 import Mtn from "../assets/blog/mtn.png"
 import Picbanner from "../assets/blog/picbanner.png";
 import scefthumb from "../assets/blog/joy1.jpg";
-
+import socialthumb from "../assets/blog/thumbnail-social-media.png";
+import pitchers from "../assets/blog/pitchers_banner.png";
+import ninani from "../assets/blog/winner.jpeg";
 
 import Digi from "../assets/blog/digi.jpg";
 
@@ -33,6 +35,7 @@ const blogPosts = [
         title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
         excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
+        imagemobile: Mtn,
         author: "Philomina Akekudaga",
         date: "January 09, 2025",
         profile: Profile3,
@@ -42,6 +45,7 @@ const blogPosts = [
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digi,
+        imagemobile: Digi,
         author: "Kwadwo A. Sirebour",
         date: "April 02, 2024",
         profile: Profile1,
@@ -51,6 +55,7 @@ const blogPosts = [
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
         image: Mtn,
+        imagemobile: Mtn,
         author: "Judith Abani",
         date: "October 18, 2024",
         profile: Profile2,
@@ -60,6 +65,7 @@ const blogPosts = [
         title: "Leveraging Platform Specific Features For Digital Communication",
         excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
         image: Picbanner,
+        imagemobile: Picbanner,
         author: "Philomina Akekudaga",
         date: "June 07, 2024",
         profile: Profile3,
@@ -69,8 +75,39 @@ const blogPosts = [
         title: "Going Beyond the Digital Canvas: Interactive Digital paints smiles on the faces of street-connected children for Christmas.",
         excerpt: "Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.",
         image: scefthumb,
+        imagemobile: scefthumb,
         author: "Philomina Akekudaga",
         date: "December 29, 2023",
+        profile: Profile3,
+    },
+    {
+        id: 7,
+        title: "Before Social Media Was A Thing, Humans Ran The Algorithm.",
+        excerpt: "Today is World Social Media Day, and chale, we’ve come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer.",
+        image: socialthumb,
+        imagemobile: socialthumb,
+        author: "Philomina Akekudaga",
+        date: "June 30, 2025",
+        profile: Profile3,
+    },
+    {
+        id: 8,
+        title: "𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐒𝐡𝐢𝐧𝐞𝐬 𝐚𝐭 𝟐𝟎𝟐𝟓 𝐏𝐢𝐭𝐜𝐡𝐞𝐫𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝐚𝐧𝐝 𝐖𝐞’𝐫𝐞 𝐉𝐮𝐬𝐭 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝!",
+        excerpt: "Interactive Digital is proud to have earned a Silver Award at the 2025 Pitchers Festival of Creativity for our Use of Influencers in the Stanbic Bank Youth Banking campaign, Your Plug.",
+        image: pitchers,
+        imagemobile: Picbanner,
+        author: "Philomina Akekudaga",
+        date: "May 17, 2025",
+        profile: Profile3,
+    },
+    {
+        id: 9,
+        title: "Interactive Digital Wins the 2025 NINANI Premier League.",
+        excerpt: "They say, “All work and no play makes Jack a dull boy.\" Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy.",
+        image: ninani,
+        imagemobile: ninani,
+        author: "Philomina Akekudaga",
+        date: "December 20, 2025",
         profile: Profile3,
     },
 ];
