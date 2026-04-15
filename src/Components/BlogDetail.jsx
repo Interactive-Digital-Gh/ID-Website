@@ -7,6 +7,9 @@ import Mtn1 from "../assets/blog/mtn1.png";
 import Mtn2 from "../assets/blog/mtnbanner.png";
 import Picbanner from "../assets/blog/picbanner.png";
 import scefbanner from "../assets/blog/job_banner.jpg";
+import socialbanner from "../assets/blog/social_media.png";
+import pitchers from "../assets/blog/pitchers_banner.png";
+import ninani from "../assets/blog/winner.jpeg";
 import Pic1 from "../assets/blog/Picture 1.jpg"
 import Pic2 from "../assets/blog/Picture 2.jpg"
 import Profile1 from "../assets/blog/profile1.jpg";
@@ -50,6 +53,7 @@ const blogPosts = [
         title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
         excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
+        imagemobile: Mtn,
         photo1: Mtn1,
         photo2: Mtn2,
         author: "Philomina Akekudaga",
@@ -67,6 +71,7 @@ const blogPosts = [
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digibanner,
+        imagemobile: Digibanner,
         author: "Kwadwo A. Sirebour",
         date: "April 02, 2024",
         profile: Profile1,
@@ -84,6 +89,7 @@ const blogPosts = [
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
         image: Mtn,
+        imagemobile: Mtn,
         author: "Judith Abani",
         date: "October 18, 2024",
         profile: Profile2,
@@ -96,6 +102,7 @@ const blogPosts = [
         title: "Leveraging Platform Specific Features For Digital Communication",
         excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
         image: Picbanner,
+        imagemobile: Picbanner,
         photo1: Pic1,
         photo2: Pic2,
         author: "Philomina Akekudaga",
@@ -110,6 +117,7 @@ const blogPosts = [
         title: "Going Beyond the Digital Canvas: Interactive Digital paints smiles on the faces of street-connected children for Christmas.",
         excerpt: "Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.",
         image: scefbanner,
+        imagemobile: scefbanner,
         author: "Philomina Akekudaga",
         date: "December 29, 2023",
         profile: Profile3,
@@ -121,6 +129,61 @@ const blogPosts = [
         content7: `"We believe not only in the transformative power of collective action especially during a season like this but more importantly, in ensuring that the smiles on these little faces never stop beaming. Our collaboration with SCEF allows us to contribute to the well-being of these beautiful children and we are humbled to have been allowed to contribute to transforming their lives." Oluwatoyin Opeodu, Senior Account Manager, highlighted during the event.`,
         header2: "Compassion Beyond Profits",
         content8: `Speaking in an interview after the event, Ekow Thompson, Chief Operating Officer, emphasized on the need for Corporate Social Investment. “As a company, we firmly believe that success should not only be measured in profits but also in the positive change we bring to the communities we serve. Investing in social impact programs, such as supporting these beautiful little souls is not just a one-off activity; it is an opportunity to make a real difference in their future lives. This partnership is a testament to the power of compassion, reminding us that every act of kindness, no matter how small, has the potential to light up and transform lives.”`
+    },
+    {
+        id: 7,
+        title: "Before Social Media Was A Thing, Humans Ran The Algorithm.",
+        excerpt: "Today is World Social Media Day, and chale, we’ve come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer.",
+        image: socialbanner,
+        imagemobile: socialbanner,
+        author: "Philomina Akekudaga",
+        date: "June 30, 2025",
+        profile: Profile3,
+        content: `Today is World Social Media Day, and chale, we’ve come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer, wondering if we would ever catch on. But before the endless scrolls and viral dances, how did we scratch that deep human itch to connect, share, and simply be social?`,
+        header1: "When Social Was Physical",
+        content1: `In Ghana, our earliest form of social media wasn’t digital; it was deeply communal. We’ve always been storytellers, news carriers and connection seekers.
+        Before the internet, messengers relayed official news from chiefs and kings. Travelers and traders became our informal feed, spreading updates across towns and villages.`,
+        content2: `The village notice board? That was our community homepage. And the market? Our original trending hub, where buying met gossip, conversation, and real-time banter. Fireside stories were the first group chats, preserving history and values through oral tradition. Folklore was our version of content creation.`,
+        content3: `With rising literacy and the establishment of formal postal systems, letters became a popular means of connecting and sharing information with people across distances. In all this, our impulse to announce, debate, and connect has been the foundational building block on which all the traditional and social media platforms we use today are built.`,
+        header2: "Dial-Up to Digital",
+        content7: `Thanks to social media, our local village squares have gone global. For us in Ghana, this digital shift truly picked up in the 2000s. It started with email services like Yahoo Mail and Hotmail, then early chat apps like Yahoo Messenger and MSN (popular from 2003). Next came Skype (2003), Hi5 (2006), and Facebook (popular in Ghana by 2009–2011), followed by Twitter, which gained traction in 2009.`,
+        content8: `BBM was the big flex from 2009 to 2011 on BlackBerry phones in Ghana and Nigeria—until WhatsApp (founded in 2009) and Viber (2010) took over and BlackBerry lost its grip. Around that time, 2go (2009) also became the go-to teen chatroom on low-data feature phones. By 2010–2011, Instagram turned us into curators, carefully choosing what to show the world. Snapchat brought the filters by 2015, and TikTok (launched in 2016, global by 2020) has made us all content creators and storytellers.`,
+        content9: `Now we connect, share, and vibe differently—and we’re loving it. This is because social media has grown from a fun distraction for sharing into a powerful space for storytelling, business, advocacy and sometimes, pure vawulence. However, navigating this space isn’t always straightforward. Sometimes, it’s hard to tell what we’re real and what’s just hype. The pressure to keep up, misinformation and the slow loss of personal privacy are all part of the experience now. As users, we’re constantly balancing between staying connected and staying mindful.`,
+        header2_extra: "A Toast to the Digital Journey", // Using existing fields creatively
+        content4: `Today, on World Social Media Day, we acknowledge it all—the cringey throwbacks, the TikTok stars, the influencers, the keyboard warriors, the quiet lurkers, and everyone who’s ever typed “Lemme just post small” and ended up going viral. We’ve come significantly further, but the journey is still unfolding. The platforms may change. The algorithms will shift. But the “social” in social media? That’ll always be us.`,
+        content5: `Happy World Social Media Day! May your captions be sharp, your followers be loyal, and your mum never find your X handle.`
+    },
+    {
+        id: 8,
+        title: "𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐒𝐡𝐢𝐧𝐞𝐬 𝐚𝐭 𝟐𝟎𝟐𝟓 𝐏𝐢𝐭𝐜𝐡𝐞𝐫𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝐚𝐧𝐝 𝐖𝐞’𝐫𝐞 𝐉𝐮𝐬𝐭 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝!",
+        excerpt: "Interactive Digital is proud to have earned a Silver Award at the 2025 Pitchers Festival of Creativity for our Use of Influencers in the Stanbic Bank Youth Banking campaign, Your Plug.",
+        image: pitchers,
+        imagemobile: pitchers,
+        author: "Philomina Akekudaga",
+        date: "May 17, 2025",
+        profile: Profile3,
+        content: `Interactive Digital is proud to have earned a Silver Award at the 2025 Pitchers Festival of Creativity for our Use of Influencers in the Stanbic Bank Youth Banking campaign, Your Plug. We were shortlisted in four standout categories: SCEF Free the Children Campaign (Design Craft), Stanbic Bank This Is It Campaign (Design Craft), Stanbic Bank Youth Banking (Use of Influencers) and Malta Guinness Sleek Can (Business Impact). Securing the Silver win for our work on the Stanbic Bank Youth Banking–Use of Influencers category is rewarding for our team.`,
+        content1: `This recognition isn’t just a nod to our team, it’s a moment to reflect on the journey, the bold creative risks, and the cultural intuition that shaped this campaign from the ground up. Influencer marketing has evolved beyond a trend and has become a powerful and nuanced way to connect with Gen Z and Millennial audiences. But for us, impact has never been about just following the wave. It’s about showing up with authenticity, cultural fluency, and a willingness to listen, learn, and create work that resonates.`,
+        content2: `That’s the standard we held ourselves to with the Stanbic Youth Banking campaign. We leaned in to what young Ghanaians were saying, their frustrations, dreams, and desire for a relatable, human financial partner. Instead of walking the traditional path, we built relationships with creators who didn’t just represent the audience; they were part of it.`,
+        content3: `Together, we sparked real conversations about money, goals, and everyday challenges, because when the message is real, the impact is deeper. This Silver win is a milestone we’re proud of, and it reminds us what’s possible when we meet the culture where it lives. But we’re not slowing down. Excellence is the compass, and we’re still chasing the gold.`,
+        content4: `Huge thanks to Stanbic Bank for believing in this vision, to our creative collaborators, and to the young people who made this campaign truly come alive. You’re the reason we keep striving. Here’s to what we’ve built and what we’re building next.`,
+    },
+    {
+        id: 9,
+        title: "Interactive Digital Wins the 2025 NINANI Premier League.",
+        excerpt: "They say, “All work and no play makes Jack a dull boy.\" Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy.",
+        image: ninani,
+        imagemobile: ninani,
+        author: "Philomina Akekudaga",
+        date: "December 20, 2025",
+        profile: Profile3,
+        content: `They say, “All work and no play makes Jack a dull boy.\" Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy. This spirit of balance and teamwork was on full display at the 2025 edition of the NINANI Premier League, which added another proud milestone to Interactive Digital’s (!D) record of excellence and collaboration. The event, held at the AIS Sports Complex on the 19th of September 2025, brought together all six (6) agencies under the NINANI Group for a day of competition, camaraderie and celebration.`,
+        content1: `Interactive Digital delivered a strong performance across multiple activities, demonstrating both skill and determination. Our team secured three gold medals in the male push-ups, 100-metre race, and football categories, as well as two silver medals in the tug of peace and penalty shootout. We triumphed over Innova-P2P to win the football tournament, the highlight of the day, which earned us the overall champion’s trophy and a cash prize of GH¢5,000.`,
+        header1: "Focus on Well-being and Team Spirit",
+        content2: `Human Resources Manager Mrs Akosua Apau Aworae highlighted the importance of the event for staff well-being and team spirit. “As a business, we see our staff as our biggest asset. We spend a lot of our time in the workspace. So there is always the opportunity to come out, relax, have fun, and bond.”`,
+        content3: `In the same spirit, our Chief Operating Officer, Mr Ekow Thompson, remarked on the success and the spirit of teamwork that led to the victory. \"We are incredibly grateful to God for today, when we get to celebrate our collective teamwork and the excellent work of the planning committee for injecting much-needed fun into our corporate lives. Our victory truly exemplifies teamwork, making the dream work. Despite various attempts to create winning formulae by combining star team members from different companies, we proudly brought the trophy home. We pray for continued strength and courage to pursue excellence. Congratulations to all participating team members.\"`,
+        header2: "A Culture of Excellence",
+        content7: `The 2025 NINANI Games gave us a chance to celebrate our people, embrace healthy competition and reaffirm a winning culture that extends beyond the field. The energy and unity displayed on the pitch are the same qualities that continue to drive Interactive Digital toward future success.`,
     },
 ];
 
@@ -175,7 +238,7 @@ const BlogDetail = () => {
                     <img
                         src={blogPost.image}
                         alt={blogPost.title}
-                        className="w-full h-[381px] object-cover rounded-lg md:block hidden"
+                        className="w-full h-[430px] object-contain rounded-lg md:block hidden"
                         loading="lazy"
                     />
                     <img
