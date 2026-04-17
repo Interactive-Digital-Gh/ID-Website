@@ -2,11 +2,14 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Digibanner from "../assets/blog/digibanner.jpg";
+import Digibannermobile from "../assets/blog/digibannermobile.png";
 import Mtn from "../assets/blog/mtn.png";
 import Mtn1 from "../assets/blog/mtn1.png";
 import Mtn2 from "../assets/blog/mtnbanner.png";
 import Picbanner from "../assets/blog/picbanner.png";
 import scefbanner from "../assets/blog/job_banner.jpg";
+import scefbanner1 from "../assets/blog/scefbanner.jpg";
+import scefbannermobile1 from "../assets/blog/scefbanner.jpg";
 import socialbanner from "../assets/blog/social_media.png";
 import pitchers from "../assets/blog/pitchers_banner.png";
 import ninani from "../assets/blog/winner.jpeg";
@@ -71,7 +74,7 @@ const blogPosts = [
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digibanner,
-        imagemobile: Digibanner,
+        imagemobile: Digibannermobile,
         author: "Kwadwo A. Sirebour",
         date: "April 02, 2024",
         profile: Profile1,
@@ -88,8 +91,8 @@ const blogPosts = [
         id: 4,
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
-        image: Mtn,
-        imagemobile: Mtn,
+        image: scefbanner1,
+        imagemobile: scefbannermobile1,
         author: "Judith Abani",
         date: "October 18, 2024",
         profile: Profile2,
@@ -244,7 +247,7 @@ const BlogDetail = () => {
                     <img
                         src={blogPost.imagemobile}
                         alt={blogPost.title}
-                        className="w-full h-[481px] px-2 rounded-md object-cover object-top rounded-lg md:hidden block"
+                        className="w-full h-auto px-2 rounded-md object-contain object-top rounded-lg md:hidden block"
                         loading="lazy"
                     />
                     <div className="lg:p-6 p-2">
