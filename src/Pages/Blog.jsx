@@ -6,6 +6,7 @@ import pitchers from "../assets/blog/pitchers_banner.png";
 import ninani from "../assets/blog/winner.jpeg";
 
 import Digi from "../assets/blog/digi.jpg";
+import joy from "../assets/blog/joy2.jpg";
 
 import Profile1 from "../assets/blog/profile1.jpg";
 import Profile2 from "../assets/blog/profile2.jpg";
@@ -54,8 +55,8 @@ const blogPosts = [
         id: 4,
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
-        image: Mtn,
-        imagemobile: Mtn,
+        image: joy,
+        imagemobile: joy,
         author: "Judith Abani",
         date: "October 18, 2024",
         profile: Profile2,
