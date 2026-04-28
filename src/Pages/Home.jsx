@@ -5,8 +5,6 @@ import sectbg from "../assets/sectbg.png"
 import sectImg from "../assets/sectImg1.png"
 // import sectImg2 from "../assets/sectImg2.png"
 
-import Digi from "../assets/blog/digi.jpg";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Slider from "../Components/Slider"
@@ -15,10 +13,9 @@ import TeamSlider from "../Components/TeamSlider"
 
 import idIcon from "../assets/interactive.png"
 
-import Mtn from "../assets/blog/mtn.png"
-import Picbanner from "../assets/blog/picbanner.png";
 import { useNavigate } from "react-router-dom";
 import Brands from "../Components/Brands"
+import HomeBlogs from "../Components/HomeBlogs";
 
 import strategyBg from "../assets/service/stratbg.png";
 import creativeBg from "../assets/service/creativeBg.png";
@@ -36,46 +33,6 @@ const Home = () => {
     };
 
     const navigate = useNavigate()
-    // Function to navigate to BlogDetail page
-    const handleReadMore = (id) => {
-        navigate(`/blog/${id}`);
-    };
-
-
-    const blogPosts = [
-        {
-            id: 1,
-            title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
-            excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
-            image: Mtn,
-            author: "Philomina Akekudaga",
-            date: "January 09, 2025",
-        },
-        {
-            id: 2,
-            title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
-            excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
-            image: Digi,
-            author: "Kwadwo A. Sirebour",
-            date: "April 02, 2024",
-        },
-        {
-            id: 3,
-            title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
-            excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
-            image: Mtn,
-            author: "Judith Abani",
-            date: "October 18, 2024",
-        },
-        {
-            id: 4,
-            title: "Leveraging Platform Specific Features For Digital Communication",
-            excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
-            image: Picbanner,
-            author: "Philomina Akekudaga",
-            date: "June 07, 2024",
-        },
-    ];
 
     useEffect(() => {
         AOS.init({
@@ -355,41 +312,8 @@ const Home = () => {
                 <TeamSlider />
             </section>
 
-            <section className="flex items-center justify-center">
-                <div className="lg:h-[470px] h-auto p-6">
-                    <div className="flex lg:flex-row flex-col lg:space-x-6 space-x-0 lg:gap-0 gap-0">
-                        {blogPosts.map((post) => (
-                            <div
-                                key={post.id}
-                                onClick={() => handleReadMore(post.id)}
-                                className="flex-shrink-0 lg:w-64 mb-4 lg:mb-0 cursor-pointer overflow-hidden"
-                            >
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    loading="lazy"
-                                    className="lg:w-[256px] w-full h-[180px] rounded-lg object-cover mb-4 transform transition-transform duration-300 hover:scale-105"
-                                />
-                                <div className="lg:h-[120px] h-auto overflow-hidden">
-                                    <h3 className="font-semibold text-[14px] mb-2 line-clamp-2">
-                                        {post.title}
-                                    </h3>
-                                    <p className="text-[12px] text-gray-600 mb-4 line-clamp-3">
-                                        {post.excerpt}
-                                    </p>
-                                </div>
-                                <div className="flex flex-col text-sm text-gray-500">
-                                    <span className="font-bold text-black">{post.author}</span>
-                                    <div className="flex items-center">
-                                        <small>{post.date}</small>
-                                        <small className="mx-1">•</small>
-                                        <small>{post.readTime}</small>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            <section>
+                <HomeBlogs />
             </section>
 
             <section>

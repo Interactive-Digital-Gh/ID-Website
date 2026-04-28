@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const blogPosts = [
+export const blogPosts = [
 
     {
         id: 1,
