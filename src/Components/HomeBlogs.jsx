@@ -10,7 +10,8 @@ const HomeBlogs = () => {
         navigate(`/blog/${id}`);
     };
 
-    const recentPosts = blogPosts.slice(0, 4);
+    // Sort newest-first and take the 4 most recent posts
+    const recentPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4);
 
     return (
         <div className="w-full flex justify-center py-10 bg-[#F7F8F9]">

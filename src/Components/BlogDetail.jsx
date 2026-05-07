@@ -1,6 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import fuguBanner from "../assets/blog/fugu_banner.png";
+import fuguMiddle from "../assets/blog/fugu_middle.jpg";
+import fuguBottom1 from "../assets/blog/fugu_bottom1.png";
+import fuguBottom2 from "../assets/blog/fugu.png";
 import Digibanner from "../assets/blog/digibanner.jpg";
 import Digibannermobile from "../assets/blog/digibannermobile.png";
 import Mtn from "../assets/blog/mtn.png";
@@ -28,6 +32,8 @@ import CommentForm from "./CommentForm";
 
 
 const blogPosts = [
+
+  
 
     {
         id: 1,
@@ -188,6 +194,44 @@ const blogPosts = [
         header2: "A Culture of Excellence",
         content7: `The 2025 NINANI Games gave us a chance to celebrate our people, embrace healthy competition and reaffirm a winning culture that extends beyond the field. The energy and unity displayed on the pitch are the same qualities that continue to drive Interactive Digital toward future success.`,
     },
+
+      {
+        id: 10,
+        title: "The Accidental Brand Campaign of the Year.",
+        excerpt: "Let's be honest: if you've ever attended a Ghanaian funeral, wedding, naming ceremony or even just a random Sunday church service, you already know that Ghanaians do not play when it comes to dressing up.",
+        image: fuguBanner,
+        imagemobile: fuguBanner,
+        middleImage: fuguMiddle,
+        photo1: fuguBottom1,
+        photo2: fuguBottom2,
+        author: "Philomina Akekudaga",
+        date: "May 4, 2026",
+        profile: Profile3,
+        content: `Let's be honest: if you've ever attended a Ghanaian funeral, wedding, naming ceremony or even just a random Sunday church service, you already know that Ghanaians do not play when it comes to dressing up. Our fashion has a history of colorful, proudly handwoven roots that stretch across every region of the country.`,
+        content1: `This month, we celebrate the Fugu, tracing its origins and craft, following its style evolution from a regional garment to a national symbol, breaking down the viral Ghana-Zambia brouhaha that took it global; and drawing out the marketing lessons that make it a case study every brand strategist should pay attention to.`,
+        header1: "Origins and Craft",
+        content2: `The Fugu or Batakari, as it is also widely known, is a smock garment handwoven on narrow strip looms, found predominantly in Northern Ghana's three northern regions. It is made from locally grown cotton that is spun, dyed and woven entirely by hand, a process that can take days for a single garment.`,
+        content3: `This weaving process reflects a long-standing craft tradition with skills passed from one generation to the next within families and communities. The Dagomba, Gonja, Frafra and Kasem people all have weaving traditions, each with subtle differences in pattern, weight and colour palette. In many of these communities, the loom is a family's economic and cultural lifeline.`,
+        content3b: `Traditionally, the Fugu was a man's garment, worn by elders, chiefs and warriors. The heavyweight version, almost armour-like in its density, was believed to provide spiritual protection. And frankly, wearing one does make you feel like you could handle anything.`,
+        header2: "The Style Evolution",
+        content7: `For much of the 20th century, the Fugu was viewed through a narrow lens and sometimes even dismissed as old-fashioned by urban southerners (a conversation Ghana has been slowly but surely correcting). That began to change as Ghanaian cultural pride deepened and as northern intellectuals, politicians and artists proudly wore their heritage into mainstream spaces.`,
+        content8: `Contemporary Ghanaian fashion designers have also taken the Fugu and run with it by designing Fugu blazers, Fugu-print accessories, Fugu-inspired womenswear, and even Fugu streetwear. Fashion weeks in Accra regularly feature these creations. Instagram is full of young Ghanaians rocking Fugu with sneakers, which is, objectively, one of the coolest looks on earth.`,
+        header3: "The Viral Online Brouhaha That Changed Everything",
+        content9: `No conversation about the Fugu's recent rise to international prominence would be complete without addressing the unlikely cultural flashpoint that accelerated it. The Ghana-Zambia Fugu debate swept across African social media and sparked a global conversation about textile identity, cultural ownership and cross-border fashion solidarity.`,
+        content9b: `It all began when Zambians mocked the traditional Ghanaian attire on social media, comparing it to a "blouse" and questioning whether the Ghanaian President, John Dramani Mahama, borrowed it from his wife, Lordina Mahama. Ghanaians quickly jumped to his defense, educating Zambians about the cultural significance of the Fugu, a traditional smock from northern Ghana. The clapback snowballed into something neither side expected, drawing in historians, fashion designers, weavers, and everyday citizens from both countries.`,
+        content9c: `The Fugu is now officially recognised in Ghana as Wednesday Wear, encouraging people across sectors to wear the Fugu or other northern traditional attire every Wednesday. The conversation ended with a positive cultural outcome, making more people appreciate the attire and the tradition behind it.`,
+        header4: "Duty-Free Access For Fugu Into Zambia",
+        content10: `On the Zambian side, the debate sparked a renewed appreciation for the shared textile heritage of the African continent. Zambian President Hakainde Hichilema expressed admiration for the Fugu and announced he would be ordering some for himself.`,
+        content10b: `As demand for the Fugu grew in Zambia, both among tourists attending the exhibitions and among ordinary Zambians who had caught Fugu fever through social media, questions arose about the cost and legality of importing the garment. The Zambia Revenue Authority (ZRA) moved swiftly to address the uncertainty by announcing that the Fugu could be imported from Ghana for personal use without attracting duty or taxes.`,
+        content10c: `The announcement was significant on several fronts. For individual buyers, it removed a financial barrier that might have otherwise made the attire prohibitively expensive. Subsequently, GEPA, in collaboration with Zambia's tourism authorities, officially opened the Ghana-Zambia Fugu and Kente Exhibition at the Lusaka Showgrounds to promote cultural diplomacy and create new business opportunities within Africa's growing creative economy.`,
+        header5: "The Challenge: Fakes and Fast Fashion",
+        content11: `Not everything sold as Fugu is authentic. As demand has grown, so have machine-made imitations designed to look like the real smock but produced without the traditional weaving process. These cheaper versions reduce the income of genuine weavers and weaken the cultural value of the garment.`,
+        content11b: `This is a common issue with traditional textiles. Fabrics such as Kente also face mass-produced copies. Many people believe the way forward is clearer certification, better public awareness and a willingness to pay fair prices for authentic craft. The duty-free clarification from the Zambia Revenue Authority makes it easier to import Fugu for personal use, but it also means buyers need to be careful about where they purchase it. Customs rules cannot tell the difference between a handwoven smock from Bolgatanga and a factory-made imitation. That responsibility rests with the buyer.`,
+        header6: "Marketing Lessons for Brands",
+        content12: `The layers of meaning attached to a product increase its emotional value, moving it from a functional item to a cultural symbol. That is a significant shift in branding terms.`,
+        content12b: `There is also a straightforward but often overlooked marketing lesson here: you do not always need a big campaign. Sometimes you just need the right person wearing the right thing in the right room. Visibility from credible figures reframes a product and widens its audience.`,
+        content12c: `Underlying all of this is the fact that cultural authenticity is increasingly rare and therefore exceptionally valuable. Consumers are drawn to products with a real story behind them. The Fugu has that story. The challenge and the opportunity are to protect and communicate it clearly so that the authenticity driving its value is never lost to imitation or dilution.`,
+    },
 ];
 
 const BlogDetail = () => {
@@ -271,7 +315,7 @@ const BlogDetail = () => {
                             {blogPost.content1}
                         </p>
                         <br />
-                        <h2 className="text-2xl font-bold mb-2">{blogPost.header1}</h2>
+                        {blogPost.header1 && <h2 className="text-2xl font-bold mb-2">{blogPost.header1}</h2>}
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content2}
                         </p>
@@ -279,8 +323,27 @@ const BlogDetail = () => {
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content3}
                         </p>
+                        {blogPost.content3b && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content3b}</p>
+                            </>
+                        )}
+
+                        {/* Middle image — shown between Origins and Style Evolution */}
+                        {blogPost.middleImage && (
+                            <div className="my-8">
+                                <img
+                                    src={blogPost.middleImage}
+                                    alt="Blog illustration"
+                                    className="w-full h-[420px] object-cover rounded-xl shadow-md"
+                                    loading="lazy"
+                                />
+                            </div>
+                        )}
+
                         <br />
-                        <h2 className="text-2xl font-bold mb-2">{blogPost.header2}</h2>
+                        {blogPost.header2 && <h2 className="text-2xl font-bold mb-2">{blogPost.header2}</h2>}
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content7}
                         </p>
@@ -289,16 +352,96 @@ const BlogDetail = () => {
                             {blogPost.content8}
                         </p>
                         <br />
+
+                        {/* header3 block */}
+                        {blogPost.header3 && <h2 className="text-2xl font-bold mb-2">{blogPost.header3}</h2>}
                         <p className="text-gray-700 leading-relaxed">
                             {blogPost.content9}
                         </p>
+                        {blogPost.content9b && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content9b}</p>
+                            </>
+                        )}
+                        {blogPost.content9c && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content9c}</p>
+                            </>
+                        )}
+
+                        {/* header4 block */}
+                        {blogPost.header4 && (
+                            <>
+                                <br />
+                                <h2 className="text-2xl font-bold mb-2">{blogPost.header4}</h2>
+                            </>
+                        )}
+                        {blogPost.content10 && (
+                            <p className="text-gray-700 leading-relaxed">{blogPost.content10}</p>
+                        )}
+                        {blogPost.content10b && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content10b}</p>
+                            </>
+                        )}
+                        {blogPost.content10c && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content10c}</p>
+                            </>
+                        )}
+
+                        {/* header5 block */}
+                        {blogPost.header5 && (
+                            <>
+                                <br />
+                                <h2 className="text-2xl font-bold mb-2">{blogPost.header5}</h2>
+                            </>
+                        )}
+                        {blogPost.content11 && (
+                            <p className="text-gray-700 leading-relaxed">{blogPost.content11}</p>
+                        )}
+                        {blogPost.content11b && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content11b}</p>
+                            </>
+                        )}
+
+                        {/* header6 block */}
+                        {blogPost.header6 && (
+                            <>
+                                <br />
+                                <h2 className="text-2xl font-bold mb-2">{blogPost.header6}</h2>
+                            </>
+                        )}
+                        {blogPost.content12 && (
+                            <p className="text-gray-700 leading-relaxed">{blogPost.content12}</p>
+                        )}
+                        {blogPost.content12b && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content12b}</p>
+                            </>
+                        )}
+                        {blogPost.content12c && (
+                            <>
+                                <br />
+                                <p className="text-gray-700 leading-relaxed">{blogPost.content12c}</p>
+                            </>
+                        )}
+
+                        {/* Bottom two images */}
                         {(blogPost.photo1 || blogPost.photo2) && (
-                            <div className="flex lg:flex-row flex-col w-full mt-6 gap-10">
+                            <div className="flex lg:flex-row flex-col w-full mt-8 gap-6">
                                 {blogPost.photo1 && (
                                     <img
                                         src={blogPost.photo1}
                                         alt="Blog detail"
-                                        className="md:w-[317px] h-[400px] object-cover rounded-lg"
+                                        className="md:w-[317px] h-[400px] object-cover rounded-xl shadow-md"
                                         loading="lazy"
                                     />
                                 )}
@@ -306,7 +449,7 @@ const BlogDetail = () => {
                                     <img
                                         src={blogPost.photo2}
                                         alt="Blog detail"
-                                        className="md:w-[317px] h-[400px] object-cover rounded-lg"
+                                        className="md:w-[317px] h-[400px] object-cover rounded-xl shadow-md"
                                         loading="lazy"
                                     />
                                 )}
@@ -358,7 +501,7 @@ const BlogDetail = () => {
                     {/* Recent Posts */}
                     <div className="bg-white p-4 rounded-md shadow">
                         <h3 className="text-xl font-semibold mb-4">Recent Posts</h3>
-                        {blogPosts.slice(0, 3).map((post) => (
+                        {[...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map((post) => (
                             <Link
                                 key={post.id}
                                 to={`/blog/${post.id}`}
