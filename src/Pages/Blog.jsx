@@ -1,3 +1,4 @@
+import fuguThumb from "../assets/blog/fugu.png";
 import Mtn from "../assets/blog/mtn.png"
 import Picbanner from "../assets/blog/picbanner.png";
 import scefthumb from "../assets/blog/joy1.jpg";
@@ -20,6 +21,8 @@ import { useNavigate } from "react-router-dom";
 
 
 export const blogPosts = [
+
+   
 
     {
         id: 1,
@@ -111,9 +114,22 @@ export const blogPosts = [
         date: "December 20, 2025",
         profile: Profile3,
     },
+
+     {
+        id: 10,
+        title: "The Accidental Brand Campaign of the Year.",
+        excerpt: "Let's be honest: if you've ever attended a Ghanaian funeral, wedding, naming ceremony or even just a random Sunday church service, you already know that Ghanaians do not play when it comes to dressing up.",
+        image: fuguThumb,
+        author: "Philomina Akekudaga",
+        date: "May 4, 2026",
+        profile: Profile3,
+    },
 ];
 
-const latestBlog = blogPosts[0]; // Assuming the first blog is the latest
+// Sort posts newest-first for display (does not mutate the original array)
+const sortedBlogPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+const latestBlog = sortedBlogPosts[0]; // The most recent blog post
 
 const Blog = () => {
     window.scrollTo({
@@ -127,10 +143,10 @@ const Blog = () => {
 
     const startIndex = (currentPage - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
-    const currentPosts = blogPosts.slice(startIndex, endIndex);
+    const currentPosts = sortedBlogPosts.slice(startIndex, endIndex);
 
     // Calculate total pages
-    const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+    const totalPages = Math.ceil(sortedBlogPosts.length / postsPerPage);
 
     // Function to handle page change
     const handlePageChange = (page) => {
