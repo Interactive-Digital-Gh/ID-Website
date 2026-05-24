@@ -117,7 +117,7 @@ const About = () => {
                     loading="lazy"
                 />
                 <div className="absolute top-[325px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[20%] lg:w-[558px]">
-                    <h2 className="text-3xl font-bold bg-red-500 text-white text-center">
+                    <h2 className="text-3xl font-bold text-white text-center">
                         CRAFTING DIGITAL EXCELLENCE FOR AFRICA'S AMBITIOUS BRANDS
                     </h2>
                     <p className="text-white text-opacity-80 text-sm lg:text-base lg:w-[800px] text-left">
