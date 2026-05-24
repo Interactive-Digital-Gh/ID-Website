@@ -278,207 +278,145 @@ const BlogDetail = () => {
     if (!blogPost) return <div className="mt-[100px] flex items-center justify-center h-[500px] ">Blog post not found!</div>;
 
     return (
-        <div className="bg-gray-50 min-h-screen mt-[100px] overflow-hidden">
-            <div className="max-w-[1125px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="bg-[#F7F8F9] min-h-screen mt-[100px] overflow-hidden">
+            <div className="max-w-[1125px] mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
-                <main className="lg:col-span-2 bg-white rounded-md shadow-md">
-                    <img
-                        src={blogPost.image}
-                        alt={blogPost.title}
-                        className="w-full h-[430px] object-contain rounded-lg md:block hidden"
-                        loading="lazy"
-                    />
-                    <img
-                        src={blogPost.imagemobile}
-                        alt={blogPost.title}
-                        className="w-full h-auto px-2 rounded-md object-contain object-top rounded-lg md:hidden block"
-                        loading="lazy"
-                    />
-                    <div className="lg:p-6 p-2">
-                        <h1 className="text-3xl font-bold mb-2">{blogPost.title}</h1>
-                        <div className="flex items-center text-gray-500 mb-4 space-x-2">
+                <main className="lg:col-span-2 bg-white rounded-2xl shadow-md overflow-hidden">
+                    {/* Hero image — full-width cover, no whitespace */}
+                    <div className="w-full overflow-hidden">
+                        <img
+                            src={blogPost.image}
+                            alt={blogPost.title}
+                            className="w-full h-[300px] md:h-[460px] object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div className="p-6 md:p-8">
+                        {/* Title + author row */}
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-snug">
+                            {blogPost.title}
+                        </h1>
+                        <div className="flex items-center gap-3 mb-8 pb-6 border-b border-gray-100">
                             <img
                                 src={blogPost.profile}
                                 alt="Author"
-                                className="w-8 h-8 object-cover rounded-full"
+                                className="w-10 h-10 object-cover rounded-full flex-shrink-0"
                                 loading="lazy"
                             />
-                            <div className="flex justify-between items-center w-full">
-                                <span className="text-sm">{blogPost.author}</span>
-                                <span className="text-sm">{blogPost.date}</span>
+                            <div className="flex-1 flex flex-wrap justify-between items-center gap-2">
+                                <span className="text-sm font-semibold text-gray-800">{blogPost.author}</span>
+                                <span className="text-sm text-gray-400">{blogPost.date}</span>
                             </div>
-
                         </div>
-                        <p className="text-gray-700 leading-relaxed">{blogPost.content}</p>
-                        <br />
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content1}
-                        </p>
-                        <br />
-                        {blogPost.header1 && <h2 className="text-2xl font-bold mb-2">{blogPost.header1}</h2>}
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content2}
-                        </p>
-                        <br />
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content3}
-                        </p>
-                        {blogPost.content3b && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content3b}</p>
-                            </>
-                        )}
 
-                        {/* Middle image — shown between Origins and Style Evolution */}
-                        {blogPost.middleImage && (
-                            <div className="my-8">
-                                <img
-                                    src={blogPost.middleImage}
-                                    alt="Blog illustration"
-                                    className="w-full h-[420px] object-cover rounded-xl shadow-md"
-                                    loading="lazy"
-                                />
-                            </div>
-                        )}
+                        {/* Content blocks */}
+                        <div className="prose-base text-gray-700 leading-[1.85] space-y-5">
+                            {blogPost.content && <p>{blogPost.content}</p>}
+                            {blogPost.content1 && <p>{blogPost.content1}</p>}
 
-                        <br />
-                        {blogPost.header2 && <h2 className="text-2xl font-bold mb-2">{blogPost.header2}</h2>}
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content7}
-                        </p>
-                        <br />
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content8}
-                        </p>
-                        <br />
+                            {blogPost.header1 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header1}
+                                </h2>
+                            )}
+                            {blogPost.content2 && <p>{blogPost.content2}</p>}
+                            {blogPost.content3 && <p>{blogPost.content3}</p>}
+                            {blogPost.content3b && <p>{blogPost.content3b}</p>}
 
-                        {/* header3 block */}
-                        {blogPost.header3 && <h2 className="text-2xl font-bold mb-2">{blogPost.header3}</h2>}
-                        <p className="text-gray-700 leading-relaxed">
-                            {blogPost.content9}
-                        </p>
-                        {blogPost.content9b && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content9b}</p>
-                            </>
-                        )}
-                        {blogPost.content9c && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content9c}</p>
-                            </>
-                        )}
-
-                        {/* header4 block */}
-                        {blogPost.header4 && (
-                            <>
-                                <br />
-                                <h2 className="text-2xl font-bold mb-2">{blogPost.header4}</h2>
-                            </>
-                        )}
-                        {blogPost.content10 && (
-                            <p className="text-gray-700 leading-relaxed">{blogPost.content10}</p>
-                        )}
-                        {blogPost.content10b && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content10b}</p>
-                            </>
-                        )}
-                        {blogPost.content10c && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content10c}</p>
-                            </>
-                        )}
-
-                        {/* header5 block */}
-                        {blogPost.header5 && (
-                            <>
-                                <br />
-                                <h2 className="text-2xl font-bold mb-2">{blogPost.header5}</h2>
-                            </>
-                        )}
-                        {blogPost.content11 && (
-                            <p className="text-gray-700 leading-relaxed">{blogPost.content11}</p>
-                        )}
-                        {blogPost.content11b && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content11b}</p>
-                            </>
-                        )}
-
-                        {/* header6 block */}
-                        {blogPost.header6 && (
-                            <>
-                                <br />
-                                <h2 className="text-2xl font-bold mb-2">{blogPost.header6}</h2>
-                            </>
-                        )}
-                        {blogPost.content12 && (
-                            <p className="text-gray-700 leading-relaxed">{blogPost.content12}</p>
-                        )}
-                        {blogPost.content12b && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content12b}</p>
-                            </>
-                        )}
-                        {blogPost.content12c && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">{blogPost.content12c}</p>
-                            </>
-                        )}
-
-                        {/* Bottom two images */}
-                        {(blogPost.photo1 || blogPost.photo2) && (
-                            <div className="flex lg:flex-row flex-col w-full mt-8 gap-6">
-                                {blogPost.photo1 && (
+                            {/* Middle image */}
+                            {blogPost.middleImage && (
+                                <div className="!my-8 overflow-hidden rounded-xl">
                                     <img
-                                        src={blogPost.photo1}
-                                        alt="Blog detail"
-                                        className="md:w-[317px] h-[400px] object-cover rounded-xl shadow-md"
+                                        src={blogPost.middleImage}
+                                        alt="Blog illustration"
+                                        className="w-full h-[280px] md:h-[420px] object-cover"
                                         loading="lazy"
                                     />
-                                )}
-                                {blogPost.photo2 && (
-                                    <img
-                                        src={blogPost.photo2}
-                                        alt="Blog detail"
-                                        className="md:w-[317px] h-[400px] object-cover rounded-xl shadow-md"
-                                        loading="lazy"
-                                    />
-                                )}
-                            </div>
-                        )}
-                        {blogPost.content4 && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">
-                                    {blogPost.content4}
-                                </p>
-                            </>
-                        )}
-                        {blogPost.content5 && (
-                            <>
-                                <br />
-                                <p className="text-gray-700 leading-relaxed">
-                                    {blogPost.content5}
-                                </p>
-                            </>
-                        )}
+                                </div>
+                            )}
 
-                        <div className="flex w-full items-center justify-between mt-10">
-                            <span>Share</span>
-                            <div className="flex space-x-4">
-                                <a href="#"><FaFacebook className=" hover:text-[#FF0226]" /></a>
-                                <a href="#"><FaTwitter className=" hover:text-[#FF0226]" /></a>
-                                <a href="#"><FaLinkedin className=" hover:text-[#FF0226]" /></a>
-                                <a href="#"><FaInstagram className=" hover:text-[#FF0226]" /></a>
+                            {blogPost.header2 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header2}
+                                </h2>
+                            )}
+                            {blogPost.content7 && <p>{blogPost.content7}</p>}
+                            {blogPost.content8 && <p>{blogPost.content8}</p>}
+
+                            {blogPost.header3 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header3}
+                                </h2>
+                            )}
+                            {blogPost.content9 && <p>{blogPost.content9}</p>}
+                            {blogPost.content9b && <p>{blogPost.content9b}</p>}
+                            {blogPost.content9c && <p>{blogPost.content9c}</p>}
+
+                            {blogPost.header4 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header4}
+                                </h2>
+                            )}
+                            {blogPost.content10 && <p>{blogPost.content10}</p>}
+                            {blogPost.content10b && <p>{blogPost.content10b}</p>}
+                            {blogPost.content10c && <p>{blogPost.content10c}</p>}
+
+                            {blogPost.header5 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header5}
+                                </h2>
+                            )}
+                            {blogPost.content11 && <p>{blogPost.content11}</p>}
+                            {blogPost.content11b && <p>{blogPost.content11b}</p>}
+
+                            {blogPost.header6 && (
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 !mt-8 !mb-3">
+                                    {blogPost.header6}
+                                </h2>
+                            )}
+                            {blogPost.content12 && <p>{blogPost.content12}</p>}
+                            {blogPost.content12b && <p>{blogPost.content12b}</p>}
+                            {blogPost.content12c && <p>{blogPost.content12c}</p>}
+
+                            {/* Bottom photo gallery */}
+                            {(blogPost.photo1 || blogPost.photo2) && (
+                                <div className={`!my-8 grid gap-4 ${blogPost.photo1 && blogPost.photo2 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                                    {blogPost.photo1 && (
+                                        <div className="overflow-hidden rounded-xl">
+                                            <img
+                                                src={blogPost.photo1}
+                                                alt="Blog detail"
+                                                className="w-full h-[280px] md:h-[340px] object-cover"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    )}
+                                    {blogPost.photo2 && (
+                                        <div className="overflow-hidden rounded-xl">
+                                            <img
+                                                src={blogPost.photo2}
+                                                alt="Blog detail"
+                                                className="w-full h-[280px] md:h-[340px] object-cover"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
+                            {blogPost.content4 && <p>{blogPost.content4}</p>}
+                            {blogPost.content5 && <p>{blogPost.content5}</p>}
+                        </div>
+
+                        {/* Share row */}
+                        <div className="flex items-center justify-between mt-10 pt-6 border-t border-gray-100">
+                            <span className="font-semibold text-gray-700">Share</span>
+                            <div className="flex gap-4 text-gray-500 text-lg">
+                                <a href="#" aria-label="Facebook"><FaFacebook className="hover:text-[#FF0226] transition-colors" /></a>
+                                <a href="#" aria-label="Twitter"><FaTwitter className="hover:text-[#FF0226] transition-colors" /></a>
+                                <a href="#" aria-label="LinkedIn"><FaLinkedin className="hover:text-[#FF0226] transition-colors" /></a>
+                                <a href="#" aria-label="Instagram"><FaInstagram className="hover:text-[#FF0226] transition-colors" /></a>
                             </div>
                         </div>
 
@@ -488,56 +426,68 @@ const BlogDetail = () => {
                 </main>
 
                 {/* Sidebar */}
-                <aside className="space-y-8">
+                <aside className="space-y-6">
                     {/* Search */}
-                    <div className="bg-white p-4 rounded-md shadow">
+                    <div className="bg-white p-5 rounded-2xl shadow-md">
                         <input
                             type="text"
-                            placeholder="Search..."
-                            className="w-full border rounded-md px-3 py-2 focus:outline-none"
+                            placeholder="Search articles..."
+                            className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-400 transition"
                         />
                     </div>
 
                     {/* Recent Posts */}
-                    <div className="bg-white p-4 rounded-md shadow">
-                        <h3 className="text-xl font-semibold mb-4">Recent Posts</h3>
-                        {[...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map((post) => (
-                            <Link
-                                key={post.id}
-                                to={`/blog/${post.id}`}
-                                className="flex gap-4 mb-4 hover:bg-gray-100 p-2 rounded-md transition">
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    className="w-16 h-16 object-cover rounded-md"
-                                />
-                                <div>
-                                    <h4 className="text-gray-700 font-medium">{post.title}</h4>
-                                    <p className="text-sm text-gray-500">{post.date}</p>
-                                </div>
-                            </Link>
-                        ))}
+                    <div className="bg-white p-5 rounded-2xl shadow-md">
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Posts</h3>
+                        <div className="space-y-3">
+                            {[...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3).map((post) => (
+                                <Link
+                                    key={post.id}
+                                    to={`/blog/${post.id}`}
+                                    className="flex gap-3 hover:bg-gray-50 p-2 rounded-xl transition"
+                                >
+                                    <div className="flex-shrink-0 overflow-hidden rounded-lg">
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-16 h-16 object-cover"
+                                        />
+                                    </div>
+                                    <div className="min-w-0">
+                                        <h4 className="text-gray-800 text-sm font-semibold line-clamp-2 leading-snug">
+                                            {post.title}
+                                        </h4>
+                                        <p className="text-xs text-gray-400 mt-1">{post.date}</p>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
 
-
                     {/* Categories */}
-                    <div className="bg-white p-4 rounded-md shadow">
-                        <h3 className="text-xl font-semibold mb-4">Categories</h3>
-                        <ul className="text-gray-600">
-                            <li>Design News (1)</li>
-                            <li>Information Technology (2)</li>
-                            <li>New Concepts News (1)</li>
+                    <div className="bg-white p-5 rounded-2xl shadow-md">
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Categories</h3>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                            <li className="flex justify-between hover:text-gray-900 transition cursor-pointer">
+                                <span>Design News</span><span className="text-gray-400">(1)</span>
+                            </li>
+                            <li className="flex justify-between hover:text-gray-900 transition cursor-pointer">
+                                <span>Information Technology</span><span className="text-gray-400">(2)</span>
+                            </li>
+                            <li className="flex justify-between hover:text-gray-900 transition cursor-pointer">
+                                <span>New Concepts News</span><span className="text-gray-400">(1)</span>
+                            </li>
                         </ul>
                     </div>
 
                     {/* Tags */}
-                    <div className="bg-white p-4 rounded-md shadow">
-                        <h3 className="text-xl font-semibold mb-4">Tags</h3>
+                    <div className="bg-white p-5 rounded-2xl shadow-md">
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Tags</h3>
                         <div className="flex flex-wrap gap-2">
                             {["Design", "Development", "AI", "HTML", "CSS", "Media"].map((tag) => (
                                 <span
                                     key={tag}
-                                    className="px-3 py-1 border text-gray-700 rounded-md text-sm"
+                                    className="px-3 py-1 bg-gray-100 hover:bg-red-50 hover:text-red-600 text-gray-700 rounded-full text-xs font-medium transition cursor-pointer"
                                 >
                                     {tag}
                                 </span>

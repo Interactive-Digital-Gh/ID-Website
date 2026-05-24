@@ -22,12 +22,12 @@ import { useNavigate } from "react-router-dom";
 
 export const blogPosts = [
 
-   
+
 
     {
         id: 1,
         title: "The Audience Most Marketing Teams Forget to Woo on Valentine's Day.",
-        excerpt: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you’ll see a relentless wave of red and white.`,
+        excerpt: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you'll see a relentless wave of red and white.`,
         image: Val,
         author: "Philomina Akekudaga",
         date: "February 14, 2026",
@@ -36,8 +36,8 @@ export const blogPosts = [
 
     {
         id: 2,
-        title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
-        excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
+        title: "Interactive Digital Celebrates MTN Ghana's Historic Achievement",
+        excerpt: "It's a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
         imagemobile: Mtn,
         author: "Philomina Akekudaga",
@@ -47,7 +47,7 @@ export const blogPosts = [
     {
         id: 3,
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
-        excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
+        excerpt: "You're scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digi,
         imagemobile: Digi,
         author: "Kwadwo A. Sirebour",
@@ -56,8 +56,8 @@ export const blogPosts = [
     },
     {
         id: 4,
-        title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
-        excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
+        title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful 'Sound of Freedom' Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
+        excerpt: `It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film "Sound of Freedom" at the AMA Omanye Aba Hall in Accra.`,
         image: joy,
         imagemobile: joy,
         author: "Judith Abani",
@@ -87,7 +87,7 @@ export const blogPosts = [
     {
         id: 7,
         title: "Before Social Media Was A Thing, Humans Ran The Algorithm.",
-        excerpt: "Today is World Social Media Day, and chale, we’ve come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer.",
+        excerpt: "Today is World Social Media Day, and chale, we've come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer.",
         image: socialthumb,
         imagemobile: socialthumb,
         author: "Philomina Akekudaga",
@@ -96,7 +96,7 @@ export const blogPosts = [
     },
     {
         id: 8,
-        title: "𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐒𝐡𝐢𝐧𝐞𝐬 𝐚𝐭 𝟐𝟎𝟐𝟓 𝐏𝐢𝐭𝐜𝐡𝐞𝐫𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝐚𝐧𝐝 𝐖𝐞’𝐫𝐞 𝐉𝐮𝐬𝐭 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝!",
+        title: "𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐒𝐡𝐢𝐧𝐞𝐬 𝐚𝐭 𝟐𝟎𝟐𝟓 𝐏𝐢𝐭𝐜𝐡𝐞𝐫𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝐚𝐧𝐝 𝐖𝐞'𝐫𝐞 𝐉𝐮𝐬𝐭 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝!",
         excerpt: "Interactive Digital is proud to have earned a Silver Award at the 2025 Pitchers Festival of Creativity for our Use of Influencers in the Stanbic Bank Youth Banking campaign, Your Plug.",
         image: pitchers,
         imagemobile: Picbanner,
@@ -107,7 +107,7 @@ export const blogPosts = [
     {
         id: 9,
         title: "Interactive Digital Wins the 2025 NINANI Premier League.",
-        excerpt: "They say, “All work and no play makes Jack a dull boy.\" Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy.",
+        excerpt: `They say, "All work and no play makes Jack a dull boy." Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy.`,
         image: ninani,
         imagemobile: ninani,
         author: "Philomina Akekudaga",
@@ -136,130 +136,140 @@ const Blog = () => {
         top: 0,
         behavior: 'smooth',
     });
-    const postsPerPage = 3; // Number of posts per page
+    const postsPerPage = 3;
     const [currentPage, setCurrentPage] = useState(1);
     const navigate = useNavigate();
-
 
     const startIndex = (currentPage - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
     const currentPosts = sortedBlogPosts.slice(startIndex, endIndex);
 
-    // Calculate total pages
     const totalPages = Math.ceil(sortedBlogPosts.length / postsPerPage);
 
-    // Function to handle page change
     const handlePageChange = (page) => {
         setCurrentPage(page);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    // Function to navigate to BlogDetail page
     const handleReadMore = (id) => {
         navigate(`/blog/${id}`);
     };
 
     return (
-        <div className="overflow-hidden">
-            {/* Blog Banner */}
-            <div className="relative">
-                <img src={blogbanner} alt="about" className="object-cover w-full h-[400px]" loading="lazy" />
-                <div className="absolute top-[325px] left-[15px] w-full lg:h-[72px] flex flex-col gap-2 lg:top-[50%] lg:left-[30%] lg:w-[558px]">
-                    <h2 className="text-[40px] font-bold text-white text-center">
-                        Latest news
-                    </h2>
+        <div className="overflow-hidden bg-[#F7F8F9]">
 
+            {/* Blog Banner */}
+            <div className="relative h-[400px] overflow-hidden">
+                <img
+                    src={blogbanner}
+                    alt="Blog banner"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/30 to-transparent flex items-end pb-14 justify-center">
+                    <h2 className="text-5xl font-bold text-white text-center tracking-wide drop-shadow-lg">
+                        Latest News
+                    </h2>
                 </div>
             </div>
 
-            {/* Latest Blog */}
-            <div className="w-full flex justify-center my-10 lg:h-[400px]">
-                <div className="lg:px-4 flex flex-col lg:w-[1140px] w-full lg:h-[316px]">
-                    <div className="mb-8">
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            className="max-w-md bg-[#F1F1F1] w-[400px] h-[49px] p-4 rounded-md"
+            {/* Search + Featured Latest Blog */}
+            <div className="w-full max-w-[1140px] mx-auto px-4 pt-12 pb-4">
+                {/* Search */}
+                <div className="mb-8">
+                    <input
+                        type="text"
+                        placeholder="Search articles..."
+                        className="w-full max-w-sm bg-white h-[48px] px-4 rounded-xl shadow-sm border border-gray-200 outline-none focus:ring-2 focus:ring-red-400 transition"
+                    />
+                </div>
+
+                {/* Featured Latest Post */}
+                <div
+                    onClick={() => handleReadMore(latestBlog.id)}
+                    className="w-full flex flex-col lg:flex-row bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer group"
+                >
+                    <div className="lg:w-[55%] overflow-hidden">
+                        <img
+                            src={latestBlog.image}
+                            alt={latestBlog.title}
+                            loading="lazy"
+                            className="w-full h-[280px] lg:h-[400px] object-cover transform transition-transform duration-500 group-hover:scale-105"
                         />
                     </div>
-                    <div
-                        onClick={() => handleReadMore(latestBlog.id)}
-                        className="flex flex-col lg:flex-row h-[700px] items-center gap-8 bg-white p-6 rounded-lg shadow-lg max-w-6xl mx-auto cursor-pointer">
-                        <div className="lg:flex-1">
+                    <div className="lg:w-[45%] p-8 flex flex-col justify-center gap-5">
+                        <span className="text-xs text-red-500 font-bold uppercase tracking-widest">
+                            Featured
+                        </span>
+                        <h2 className="text-2xl font-bold text-gray-900 line-clamp-3 leading-snug">
+                            {latestBlog.title}
+                        </h2>
+                        <p className="text-gray-500 leading-relaxed line-clamp-4 text-sm">
+                            {latestBlog.excerpt}
+                        </p>
+                        <div className="flex items-center gap-3">
                             <img
-                                src={latestBlog.image}
-                                alt={latestBlog.title}
+                                src={latestBlog.profile}
+                                alt={latestBlog.author}
                                 loading="lazy"
-                                className="w-full lg:w-[500px] h-[300px] object-cover rounded-lg transform transition-transform duration-300 hover:scale-105"
+                                className="w-10 h-10 rounded-full object-cover flex-shrink-0"
                             />
+                            <div>
+                                <p className="font-semibold text-gray-800 text-sm">{latestBlog.author}</p>
+                                <p className="text-gray-400 text-xs">{latestBlog.date}</p>
+                            </div>
                         </div>
-                        <div className="lg:flex-1 flex flex-col justify-center">
-                            <h2 className="text-2xl font-bold text-gray-800 mb-4 line-clamp-2">
-                                {latestBlog.title}
-                            </h2>
-                            <p className="text-gray-600 leading-relaxed mb-6 line-clamp-4">
-                                {latestBlog.excerpt}
-                            </p>
-                            <div className="flex items-center gap-4 mb-6">
-                                <img
-                                    src={latestBlog.profile}
-                                    alt={latestBlog.author}
-                                    loading="lazy"
-                                    className="w-12 h-12 rounded-full object-cover"
-                                />
-                                <div>
-                                    <p className="font-bold text-gray-800">{latestBlog.author}</p>
-                                    <p className="text-gray-500 text-sm">{latestBlog.date}</p>
-                                </div>
-                            </div>
-                            <div className="text-right">
-                                {/* Navigate to BlogDetail */}
-                                <button
-                                    onClick={() => handleReadMore(latestBlog.id)}
-                                    className="text-red-500 font-semibold hover:text-red-700"
-                                >
-                                    Read More
-                                </button>
-                            </div>
+                        <div>
+                            <button
+                                onClick={() => handleReadMore(latestBlog.id)}
+                                className="inline-flex items-center gap-1 text-red-500 font-semibold hover:text-red-700 text-sm transition-colors"
+                            >
+                                Read More &rarr;
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Blog Posts */}
-            <div className="py-10 flex flex-col items-center justify-center">
-                <div className="lg:w-[1120px] pr-2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+            {/* Blog Posts Grid */}
+            <div className="w-full max-w-[1140px] mx-auto px-4 py-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentPosts.map((post) => (
                         <div
                             key={post.id}
                             onClick={() => handleReadMore(post.id)}
-                            className="bg-white pl-2 md:pl-0 cursor-pointer rounded-lg shadow-lg overflow-hidden flex flex-col">
-                            <div className="relative overflow-hidden">
+                            className="bg-white cursor-pointer rounded-2xl shadow-md overflow-hidden flex flex-col group hover:shadow-xl transition-shadow duration-300"
+                        >
+                            <div className="overflow-hidden">
                                 <img
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-[280px] object-cover transform transition-transform duration-300 hover:scale-105"
+                                    className="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-105"
                                 />
                             </div>
-                            <div className="p-4 flex-1">
-                                <h3 className="font-bold text-lg mb-2 text-gray-800 line-clamp-2">{post.title}</h3>
-                                <p className="text-sm text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                            <div className="p-5 flex-1 flex flex-col">
+                                <h3 className="font-bold text-base mb-2 text-gray-900 line-clamp-2 leading-snug">
+                                    {post.title}
+                                </h3>
+                                <p className="text-sm text-gray-500 line-clamp-3 leading-relaxed flex-1">
+                                    {post.excerpt}
+                                </p>
                             </div>
-                            <div className="flex items-center justify-between px-4 pb-4">
-                                <div className="flex items-center">
+                            <div className="flex items-center justify-between px-5 pb-5 pt-2 border-t border-gray-100 mt-auto">
+                                <div className="flex items-center gap-2">
                                     <img
                                         src={post.profile}
                                         alt={post.author}
-                                        className="w-10 h-10 rounded-full object-cover mr-3"
+                                        className="w-9 h-9 rounded-full object-cover flex-shrink-0"
                                     />
                                     <div>
-                                        <p className="font-semibold text-gray-800 text-sm">{post.author}</p>
-                                        <p className="text-gray-500 text-xs">{post.date}</p>
+                                        <p className="font-semibold text-gray-800 text-xs">{post.author}</p>
+                                        <p className="text-gray-400 text-[11px]">{post.date}</p>
                                     </div>
                                 </div>
-                                {/* Navigate to BlogDetail */}
                                 <button
                                     onClick={() => handleReadMore(post.id)}
-                                    className="text-red-500 font-semibold hover:text-red-700"
+                                    className="text-red-500 font-semibold hover:text-red-700 text-sm transition-colors"
                                 >
                                     Read More
                                 </button>
@@ -269,15 +279,16 @@ const Blog = () => {
                 </div>
 
                 {/* Pagination */}
-                <div className="flex gap-2 mt-4">
+                <div className="flex gap-2 mt-10 justify-center">
                     {Array.from({ length: totalPages }, (_, index) => (
                         <button
                             key={index}
                             onClick={() => handlePageChange(index + 1)}
-                            className={`px-4 py-2 rounded-md ${currentPage === index + 1
-                                ? "bg-red-500 text-white"
-                                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                                }`}
+                            className={`w-10 h-10 rounded-full font-semibold text-sm transition-colors duration-200 ${
+                                currentPage === index + 1
+                                    ? "bg-red-500 text-white shadow"
+                                    : "bg-white text-gray-600 hover:bg-gray-100 shadow-sm"
+                            }`}
                         >
                             {index + 1}
                         </button>
@@ -285,7 +296,6 @@ const Blog = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
