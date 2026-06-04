@@ -22,6 +22,7 @@ import InnovationConsulting from './Components/servicedetails/InnovationConsulti
 import DataAnalytics from './Components/servicedetails/DataAnalytics'
 import Terms from './Pages/Terms'
 import Privacy from './Pages/Privacy'
+import NotFound from './Pages/NotFound'
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/privacy' element={<Privacy />} />
 
           <Route path='/mtndetail' element={<MtnDetail />} />
+          <Route path='*' element={<NotFound />} />
 
         </Routes>
         <TopFooter />

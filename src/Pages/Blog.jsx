@@ -15,6 +15,8 @@ import Profile3 from "../assets/blog/profile3.jpg";
 import Val from "../assets/blog/val.jpeg";
 
 import blogbanner from "../assets/blog/blogbanner.png";
+import idPattern from "../assets/pattern/ID-pattern.png";
+import mPattern from "../assets/pattern/m-pattern.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -115,7 +117,7 @@ export const blogPosts = [
         profile: Profile3,
     },
 
-     {
+    {
         id: 10,
         title: "The Accidental Brand Campaign of the Year.",
         excerpt: "Let's be honest: if you've ever attended a Ghanaian funeral, wedding, naming ceremony or even just a random Sunday church service, you already know that Ghanaians do not play when it comes to dressing up.",
@@ -156,143 +158,149 @@ const Blog = () => {
     };
 
     return (
-        <div className="overflow-hidden bg-[#F7F8F9]">
-
-            {/* Blog Banner */}
-            <div className="relative h-[400px] overflow-hidden">
+        <div className="bg-[#FAFAFA] min-h-screen pt-32 pb-24 relative overflow-hidden">
+            {/* Background Patterns */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
                 <img
-                    src={blogbanner}
-                    alt="Blog banner"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
+                    src={idPattern}
+                    alt=""
+                    className="absolute top-0 left-0 w-[40vw] max-w-[500px]  object-contain object-top object-left"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/30 to-transparent flex items-end pb-14 justify-center">
-                    <h2 className="text-5xl font-bold text-white text-center tracking-wide drop-shadow-lg">
-                        Latest News
-                    </h2>
-                </div>
+                <img
+                    src={mPattern}
+                    alt=""
+                    className="absolute top-[15%] right-[-10%] w-[50vw] max-w-[700px]  transform rotate-12"
+                />
+                <img
+                    src={mPattern}
+                    alt=""
+                    className="absolute top-[50%] left-[-15%] w-[60vw] max-w-[800px]  transform -rotate-12"
+                />
+                <img
+                    src={mPattern}
+                    alt=""
+                    className="absolute bottom-[-5%] right-[5%] w-[45vw] max-w-[600px]  transform rotate-6"
+                />
             </div>
 
-            {/* Search + Featured Latest Blog */}
-            <div className="w-full max-w-[1140px] mx-auto px-4 pt-12 pb-4">
-                {/* Search */}
-                <div className="mb-8">
-                    <input
-                        type="text"
-                        placeholder="Search articles..."
-                        className="w-full max-w-sm bg-white h-[48px] px-4 rounded-xl shadow-sm border border-gray-200 outline-none focus:ring-2 focus:ring-red-400 transition"
-                    />
-                </div>
-
-                {/* Featured Latest Post */}
-                <div
-                    onClick={() => handleReadMore(latestBlog.id)}
-                    className="w-full flex flex-col lg:flex-row bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer group"
-                >
-                    <div className="lg:w-[55%] overflow-hidden">
-                        <img
-                            src={latestBlog.image}
-                            alt={latestBlog.title}
-                            loading="lazy"
-                            className="w-full h-[280px] lg:h-[400px] object-cover transform transition-transform duration-500 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="lg:w-[45%] p-8 flex flex-col justify-center gap-5">
-                        <span className="text-xs text-red-500 font-bold uppercase tracking-widest">
-                            Featured
-                        </span>
-                        <h2 className="text-2xl font-bold text-gray-900 line-clamp-3 leading-snug">
-                            {latestBlog.title}
-                        </h2>
-                        <p className="text-gray-500 leading-relaxed line-clamp-4 text-sm">
-                            {latestBlog.excerpt}
-                        </p>
-                        <div className="flex items-center gap-3">
-                            <img
-                                src={latestBlog.profile}
-                                alt={latestBlog.author}
-                                loading="lazy"
-                                className="w-10 h-10 rounded-full object-cover flex-shrink-0"
-                            />
-                            <div>
-                                <p className="font-semibold text-gray-800 text-sm">{latestBlog.author}</p>
-                                <p className="text-gray-400 text-xs">{latestBlog.date}</p>
-                            </div>
-                        </div>
-                        <div>
-                            <button
-                                onClick={() => handleReadMore(latestBlog.id)}
-                                className="inline-flex items-center gap-1 text-red-500 font-semibold hover:text-red-700 text-sm transition-colors"
-                            >
-                                Read More &rarr;
-                            </button>
-                        </div>
+            <div className="relative z-10">
+                {/* Categories / Tags Navigation */}
+                <div className="w-full overflow-x-auto no-scrollbar">
+                    <div className="w-max mx-auto px-4 flex justify-center items-center gap-6 md:gap-10 mb-14 text-[13px] font-semibold text-[#A32626]">
+                        <span className="cursor-pointer hover:text-black transition-colors">Design News</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Media Works</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Technology</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Gen Z</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">General News</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Stock</span>
+                        <button className="cursor-pointer hover:text-black transition-colors flex items-center ml-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-            </div>
 
-            {/* Blog Posts Grid */}
-            <div className="w-full max-w-[1140px] mx-auto px-4 py-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {currentPosts.map((post) => (
-                        <div
-                            key={post.id}
-                            onClick={() => handleReadMore(post.id)}
-                            className="bg-white cursor-pointer rounded-2xl shadow-md overflow-hidden flex flex-col group hover:shadow-xl transition-shadow duration-300"
-                        >
-                            <div className="overflow-hidden">
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    className="w-full h-[220px] object-cover transform transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="p-5 flex-1 flex flex-col">
-                                <h3 className="font-bold text-base mb-2 text-gray-900 line-clamp-2 leading-snug">
-                                    {post.title}
-                                </h3>
-                                <p className="text-sm text-gray-500 line-clamp-3 leading-relaxed flex-1">
-                                    {post.excerpt}
+                {/* Top Featured Post */}
+                <div className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+                    <div
+                        onClick={() => handleReadMore(latestBlog.id)}
+                        className="flex flex-col lg:flex-row bg-white rounded-[2rem] p-4 lg:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.04)] cursor-pointer group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300 items-stretch"
+                    >
+                        {/* Left Content */}
+                        <div className="lg:w-[45%] p-6 lg:px-12 lg:py-8 flex flex-col">
+                            <span className="text-[#B3261E] font-bold text-[11px] tracking-wider uppercase mb-5">
+                                News
+                            </span>
+                            <h2 className="text-[1.65rem] lg:text-[2rem] font-semibold text-[#333333] leading-[1.3] mb-8">
+                                {latestBlog.title}
+                            </h2>
+                            <div className="mt-auto pt-6">
+                                <p className="text-[#666666] text-[13px] mb-2">
+                                    By {latestBlog.author}
+                                </p>
+                                <p className="text-[#999999] text-[13px] mb-10 lg:mb-14">
+                                    {latestBlog.date}
                                 </p>
                             </div>
-                            <div className="flex items-center justify-between px-5 pb-5 pt-2 border-t border-gray-100 mt-auto">
-                                <div className="flex items-center gap-2">
-                                    <img
-                                        src={post.profile}
-                                        alt={post.author}
-                                        className="w-9 h-9 rounded-full object-cover flex-shrink-0"
-                                    />
-                                    <div>
-                                        <p className="font-semibold text-gray-800 text-xs">{post.author}</p>
-                                        <p className="text-gray-400 text-[11px]">{post.date}</p>
-                                    </div>
-                                </div>
-                                <button
-                                    onClick={() => handleReadMore(post.id)}
-                                    className="text-red-500 font-semibold hover:text-red-700 text-sm transition-colors"
-                                >
-                                    Read More
-                                </button>
+                            {/* Carousel Dots */}
+                            <div className="flex items-center gap-2 mt-auto">
+                                <div className="w-[7px] h-[7px] rounded-full bg-[#B3261E]"></div>
+                                <div className="w-[7px] h-[7px] rounded-full bg-gray-200"></div>
+                                <div className="w-[7px] h-[7px] rounded-full bg-gray-200"></div>
                             </div>
                         </div>
-                    ))}
+                        {/* Right Image */}
+                        <div className="lg:w-[55%] h-[300px] lg:h-[400px] overflow-hidden rounded-2xl">
+                            <img
+                                src={latestBlog.image}
+                                alt={latestBlog.title}
+                                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+                    </div>
                 </div>
 
-                {/* Pagination */}
-                <div className="flex gap-2 mt-10 justify-center">
-                    {Array.from({ length: totalPages }, (_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => handlePageChange(index + 1)}
-                            className={`w-10 h-10 rounded-full font-semibold text-sm transition-colors duration-200 ${
-                                currentPage === index + 1
-                                    ? "bg-red-500 text-white shadow"
-                                    : "bg-white text-gray-600 hover:bg-gray-100 shadow-sm"
-                            }`}
-                        >
-                            {index + 1}
-                        </button>
-                    ))}
+                {/* Blog Posts Grid */}
+                <div className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        {currentPosts.map((post) => (
+                            <div
+                                key={post.id}
+                                onClick={() => handleReadMore(post.id)}
+                                className="bg-white rounded-[1.5rem] p-4 lg:p-5 shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 cursor-pointer group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col"
+                            >
+                                <div className="relative overflow-hidden aspect-[4/3] rounded-2xl mb-6">
+                                    <img
+                                        src={post.image}
+                                        alt={post.title}
+                                        className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
+                                <div className="flex flex-col flex-1 px-1 pb-1">
+                                    <span className="text-[#8B1A10] font-bold text-[12px] tracking-widest uppercase mb-4">
+                                        News
+                                    </span>
+                                    <h3 className="text-[1.35rem] font-semibold text-[#333333] leading-[1.4] mb-8 line-clamp-3">
+                                        {post.title}
+                                    </h3>
+                                    <div className="mt-auto">
+                                        <p className="text-[#777777] text-[14px] mb-3">
+                                            By {post.author}
+                                        </p>
+                                        <p className="text-[#999999] text-[14px]">
+                                            {post.date}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Pagination */}
+                    {totalPages > 1 && (
+                        <div className="flex justify-center items-center gap-6 mt-20">
+                            {currentPage > 1 && (
+                                <button
+                                    onClick={() => handlePageChange(currentPage - 1)}
+                                    className="flex items-center gap-2 px-8 py-3 rounded-lg font-medium bg-white text-[#A32626] shadow-sm hover:bg-gray-50 text-[16px] transition-colors duration-300"
+                                >
+                                    &larr; Previous Page
+                                </button>
+                            )}
+                            <button
+                                onClick={() => {
+                                    if (currentPage < totalPages) handlePageChange(currentPage + 1);
+                                }}
+                                className={`flex items-center gap-2 px-8 py-3 rounded-lg font-medium text-white text-[16px] transition-colors duration-300 ${currentPage < totalPages ? 'bg-[#A32626] hover:bg-[#8A1A14]' : 'bg-gray-300 cursor-not-allowed'
+                                    }`}
+                                disabled={currentPage >= totalPages}
+                            >
+                                Next Page &rarr;
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
