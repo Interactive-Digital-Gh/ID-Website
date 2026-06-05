@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import fuguBanner from "../assets/blog/fugu_banner.png";
 import fuguMiddle from "../assets/blog/fugu_middle.jpg";
 import fuguBottom1 from "../assets/blog/fugu_bottom1.png";
@@ -37,6 +37,7 @@ const blogPosts = [
 
     {
         id: 1,
+        category: "Insight",
         title: "The Audience Most Marketing Teams Forget to Woo on Valentine's Day.",
         excerpt: `As soon as the January "dryness" starts to fade, the month of February swoops in, bringing with it a season of love. Walk through Makola or scroll through social media, and you’ll see a relentless wave of red and white.`,
         image: Valbanner,
@@ -59,6 +60,7 @@ const blogPosts = [
     },
     {
         id: 2,
+        category: "Award",
         title: "Interactive Digital Celebrates MTN Ghana’s Historic Achievement",
         excerpt: "It’s a triple threat! We are thrilled to congratulate MTN Ghana's outstanding accomplishment as the 5th-time winner of the Chartered Institute of Marketing Ghana (CIMG) Telecommunications Award for Overall Marketing Orientation Organization of the Year 2023, Telecom Company of the Year, as well as the Hall of Fame Award for Telecommunications.",
         image: Mtn,
@@ -77,6 +79,7 @@ const blogPosts = [
     },
     {
         id: 3,
+        category: "Insight",
         title: "Why Digital Storytelling Matters and How Interactive Digital Is Making It Count.",
         excerpt: "You’re scrolling through your feed online, and then a video pops up, it's not just one of those boring pitches. Instead, it tells a catchy story that draws you in. Before you realise it, you are emotionally invested and eager to learn more about the brand behind it.",
         image: Digibanner,
@@ -95,6 +98,7 @@ const blogPosts = [
     },
     {
         id: 4,
+        category: "News",
         title: "Interactive Digital and Street Children Empowerment Foundation (SCEF) Host Successful ‘Sound of Freedom’ Movie Screening to Raise Funds for Street-Connected Children Initiatives.",
         excerpt: "It was all about impact on Friday, October 18, 2024, as the Street Children Empowerment Foundation (SCEF) hosted a fundraising screening of the film “Sound of Freedom” at the AMA Omanye Aba Hall in Accra.",
         image: scefbanner1,
@@ -108,6 +112,7 @@ const blogPosts = [
     },
     {
         id: 5,
+        category: "Insight",
         title: "Leveraging Platform Specific Features For Digital Communication",
         excerpt: "Digital platforms have changed the way businesses communicate and how people connect. These platforms offer a variety of tools and features that often go unnoticed due to a lack of deeper understanding",
         image: Picbanner,
@@ -123,6 +128,7 @@ const blogPosts = [
     },
     {
         id: 6,
+        category: "News",
         title: "Going Beyond the Digital Canvas: Interactive Digital paints smiles on the faces of street-connected children for Christmas.",
         excerpt: "Christmas was a little different this time here at ID. We partnered with the Street Children Empowerment Foundation (SCEF) to share the joy of Christmas with street-connected children and children in vulnerable situations.",
         image: scefbanner,
@@ -141,6 +147,7 @@ const blogPosts = [
     },
     {
         id: 7,
+        category: "Insight",
         title: "Before Social Media Was A Thing, Humans Ran The Algorithm.",
         excerpt: "Today is World Social Media Day, and chale, we’ve come a long way. It feels like just yesterday we were meticulously crafting our Facebook profiles and sending slightly awkward messages from a busy internet café computer.",
         image: socialbanner,
@@ -164,6 +171,7 @@ const blogPosts = [
     },
     {
         id: 8,
+        category: "Award",
         title: "𝐈𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐒𝐡𝐢𝐧𝐞𝐬 𝐚𝐭 𝟐𝟎𝟐𝟓 𝐏𝐢𝐭𝐜𝐡𝐞𝐫𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝐚𝐧𝐝 𝐖𝐞’𝐫𝐞 𝐉𝐮𝐬𝐭 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝!",
         excerpt: "Interactive Digital is proud to have earned a Silver Award at the 2025 Pitchers Festival of Creativity for our Use of Influencers in the Stanbic Bank Youth Banking campaign, Your Plug.",
         image: pitchers,
@@ -179,6 +187,7 @@ const blogPosts = [
     },
     {
         id: 9,
+        category: "News",
         title: "Interactive Digital Wins the 2025 NINANI Premier League.",
         excerpt: "They say, “All work and no play makes Jack a dull boy.\" Stepping away from the daily office routine for sports and recreation gives teams a chance to recharge, bond, and return with renewed energy.",
         image: ninani,
@@ -197,6 +206,7 @@ const blogPosts = [
 
       {
         id: 10,
+        category: "Insight",
         title: "The Accidental Brand Campaign of the Year.",
         excerpt: "Let's be honest: if you've ever attended a Ghanaian funeral, wedding, naming ceremony or even just a random Sunday church service, you already know that Ghanaians do not play when it comes to dressing up.",
         image: fuguBanner,
@@ -273,12 +283,27 @@ const BlogDetail = () => {
 
 
     const { id } = useParams();
+    const navigate = useNavigate();
+
+    const handleCategorySelect = (category) => {
+        navigate(`/blog${category !== "All" ? `?category=${category}` : ""}`);
+    };
     const blogPost = blogPosts.find((post) => post.id === parseInt(id));
 
     if (!blogPost) return <div className="mt-[100px] flex items-center justify-center h-[500px] ">Blog post not found!</div>;
 
     return (
         <div className="bg-[#F7F8F9] min-h-screen mt-[100px] overflow-hidden">
+            {/* Categories / Tags Navigation */}
+            <div className="w-full overflow-x-auto no-scrollbar pt-8">
+                <div className="w-max mx-auto px-4 flex justify-center items-center gap-6 md:gap-10 text-[13px] font-semibold text-[#A32626]">
+                    <span onClick={() => handleCategorySelect("All")} className="cursor-pointer hover:text-black transition-colors">All</span>
+                    <span onClick={() => handleCategorySelect("Insight")} className="cursor-pointer hover:text-black transition-colors">Insights</span>
+                    <span onClick={() => handleCategorySelect("News")} className="cursor-pointer hover:text-black transition-colors">News</span>
+                    <span onClick={() => handleCategorySelect("Award")} className="cursor-pointer hover:text-black transition-colors">Awards</span>
+                </div>
+            </div>
+
             <div className="max-w-[1125px] mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
                 <main className="lg:col-span-2 bg-white rounded-2xl shadow-md overflow-hidden">
@@ -294,6 +319,9 @@ const BlogDetail = () => {
 
                     <div className="p-6 md:p-8">
                         {/* Title + author row */}
+                        <span className="text-[#B3261E] font-bold text-[11px] tracking-wider uppercase block mb-3">
+                            {blogPost.category}
+                        </span>
                         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-snug">
                             {blogPost.title}
                         </h1>
