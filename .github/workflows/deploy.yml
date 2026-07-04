@@ -19,10 +19,21 @@ jobs:
           username: ${{ vars.PROD_SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            set -e
             cd /var/www/production/ID-Website
             git pull origin main
             npm ci
             npm run build
+
+            echo "Deploying nginx security headers"
+            sudo cp nginx/security-headers.conf /etc/nginx/snippets/security-headers.conf
+            sudo cp nginx/interactivedigital.com.gh.conf /etc/nginx/sites-available/interactivedigital.com.gh
+            sudo ln -sf /etc/nginx/sites-available/interactivedigital.com.gh /etc/nginx/sites-enabled/interactivedigital.com.gh
+
+            echo "Validating nginx config"
+            sudo nginx -t
+
+            echo "Reloading nginx"
             sudo systemctl reload nginx
 
   deploy-staging:
@@ -53,6 +64,12 @@ jobs:
 
                 echo "Verifying dist exists"
                 ls -la dist
+
+                echo "Deploying nginx security headers"
+                sudo cp nginx/security-headers.conf /etc/nginx/snippets/security-headers.conf
+
+                echo "Validating nginx config"
+                sudo nginx -t
 
                 echo "Reloading nginx"
                 sudo systemctl reload nginx
