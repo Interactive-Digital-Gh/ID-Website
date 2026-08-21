@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Deploy Production
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ vars.PROD_SERVER_HOST }}
           username: ${{ vars.PROD_SERVER_USER }}
@@ -42,7 +42,7 @@ jobs:
 
         steps:
           - name: Deploy Staging
-            uses: appleboy/ssh-action@v1.0.3
+            uses: appleboy/ssh-action@v1.2.0
             with:
               host: ${{ vars.PROD_SERVER_HOST }}
               username: ${{ vars.PROD_SERVER_USER }}
