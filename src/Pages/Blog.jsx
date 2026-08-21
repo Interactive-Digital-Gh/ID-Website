@@ -12,7 +12,10 @@ import joy from "../assets/blog/joy2.jpg";
 import Profile1 from "../assets/blog/profile1.jpg";
 import Profile2 from "../assets/blog/profile2.jpg";
 import Profile3 from "../assets/blog/profile3.jpg";
+import Profile4 from "../assets/blog/profile4.jpeg";
 import Val from "../assets/blog/val.jpeg";
+import Eyramthumb from "../assets/blog/Eyramthumbnail.jpg";
+import Philothumb from "../assets/blog/Philothumbnail.jpg";
 
 import blogbanner from "../assets/blog/blogbanner.png";
 import idPattern from "../assets/pattern/ID-pattern.png";
@@ -124,6 +127,28 @@ export const blogPosts = [
         author: "Philomina Akekudaga",
         date: "December 20, 2025",
         profile: Profile3,
+    },
+
+    {
+        id: 12,
+        category: "Insight",
+        title: "When Is the Right Time to Run a PR Campaign After a Crisis?",
+        excerpt: "Public relations has always been about shaping perception, but there is one reality every communications professional eventually learns.",
+        image: Philothumb,
+        author: "Philomina Akekudaga",
+        date: "August 21, 2026",
+        profile: Profile3,
+    },
+
+    {
+        id: 11,
+        category: "Insight",
+        title: "Why Brands Need Cultural Intelligence",
+        excerpt: "During an analysis meeting of one of the top 10 best super bowl ads, a couple of team members were dumbfounded at what they were watching.",
+        image: Eyramthumb,
+        author: "Eyram Kpodo",
+        date: "August 20, 2026",
+        profile: Profile4,
     },
 
     {

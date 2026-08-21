@@ -22,6 +22,9 @@ import Pic2 from "../assets/blog/Picture 2.jpg"
 import Profile1 from "../assets/blog/profile1.jpg";
 import Profile2 from "../assets/blog/profile2.jpg";
 import Profile3 from "../assets/blog/profile3.jpg";
+import Profile4 from "../assets/blog/profile4.jpeg";
+import Eyrambanner from "../assets/blog/Eyrambanner.jpg";
+import Philobanner from "../assets/blog/Philobanner.jpg";
 import Valbanner from "../assets/blog/valbannermain.png";
 import Val1 from "../assets/blog/v2.png";
 import Valbannermobile from "../assets/blog/val.jpeg";
@@ -205,6 +208,51 @@ const blogPosts = [
     },
 
       {
+        id: 12,
+        category: "Insight",
+        title: "When Is the Right Time to Run a PR Campaign After a Crisis?",
+        excerpt: "Public relations has always been about shaping perception, but there is one reality every communications professional eventually learns.",
+        image: Philobanner,
+        imagemobile: Philobanner,
+        author: "Philomina Akekudaga",
+        date: "August 21, 2026",
+        profile: Profile3,
+        content: `Public relations has always been about shaping perception, but there is one reality every communications professional eventually learns. A campaign cannot persuade people to forget an issue they still believe remains unresolved. When trust is fragile, audiences often steer the conversation back to what matters most to them, even when a campaign is designed to focus on something entirely different.`,
+        content1: `Boeing's efforts to rebuild its reputation after the 737 MAX crisis offer a classic case study in crisis communications.`,
+        content2: `Following the two fatal 737 MAX crashes in 2018 and 2019, Boeing faced one of the biggest reputation crises in its history. The company worked to restore confidence by announcing new aircraft orders, technological developments and business milestones as it sought to reassure customers, investors and the wider public. While these announcements were important from a business perspective, many conversations continued to center on aircraft safety, regulatory oversight and accountability.`,
+        content3: `From a communications perspective, the more interesting question is why people kept returning to those issues instead of discussing Boeing's future. The answer is that audiences rarely separate a new campaign from an unresolved concern. If they believe the underlying problem has not been fully addressed, that issue becomes the lens through which every new message is interpreted.`,
+        content3b: `This is one of the reasons timing matters so much in public relations.`,
+        content7: `Many organisations assume that once media attention begins to fade, they can start telling a new story. Internally, that often feels reasonable because business must continue and marketing teams are expected to focus on the future. Public opinion, however, does not always move at the same pace. People remember major events long after the headlines disappear, particularly when they feel the organisation has not done enough to address the root of the problem.`,
+        content8: `That does not mean Boeing remained inactive after the crisis. The company implemented extensive safety reviews, worked closely with aviation regulators and made changes to its certification processes. Those actions were necessary, but rebuilding confidence required more than announcing them. Trust had to be earned over time through consistent action and transparency. Until people believed meaningful changes had been made, many public conversations continued to return to the crisis.`,
+        content9: `This is a situation many organisations eventually face.`,
+        content9b: `A company recovering from a product recall may want to talk about innovation while customers are still asking questions about quality. A financial institution may be ready to introduce a new digital service while clients remain concerned about a previous security breach. A healthcare provider may launch a campaign highlighting patient care while families are still waiting for accountability after a widely reported failure.`,
+        content9c: `None of these campaigns struggle because the creative work is weak but because the audience is still focused on a different story. For communications professionals, patience is part of the strategy.`,
+        content10: `Rebuilding trust usually takes longer than producing a campaign. People want evidence before they accept a new narrative. They look for consistent action, meaningful improvements and honest communication. Advertising can increase awareness, but it cannot replace the work of rebuilding credibility.`,
+        content10b: `This does not mean organisations should remain silent forever. Every brand eventually needs to move forward. The challenge is recognising when the public is ready to move with you. Before launching a reputation campaign after a crisis, communications teams should ask a simple question.`,
+        content10c: `Have we given people enough evidence that the problem has been addressed, or are we simply hoping they are ready to move on?`,
+        content11: `The answer to that question often determines whether a campaign starts a new conversation or reopens an old one.`,
+    },
+
+      {
+        id: 11,
+        category: "Insight",
+        title: "Why Brands Need Cultural Intelligence",
+        excerpt: "During an analysis meeting of one of the top 10 best super bowl ads, a couple of team members were dumbfounded at what they were watching.",
+        image: Eyrambanner,
+        imagemobile: Eyrambanner,
+        author: "Eyram Kpodo",
+        date: "August 20, 2026",
+        profile: Profile4,
+        content: `During an analysis meeting of one of the top 10 best super bowl ads, a couple of team members were dumbfounded at what they were watching. A product that is able to assist in finding one's lost dog? Why would anyone put in so much money to find a dog? Some of them could not relate to what they were seeing and rightly so. Why? This was an ad designed for the American audience and not the Ghanaian one. Now the Maggie jingle, "maggie, maagie… maagie!", that is the ad they don't mind not skipping. It is fun, creative and nostalgic. Like an ode to their childhood.`,
+        content1: `People do not all see the world the same way. They are shaped by more than demographics. Their traditions, experiences, language and even sense of humour influence how they perceive a message. Having the awareness and understanding of how to navigate those differences successfully is what makes you culturally intelligent. The worst thing for a brand is to be perceived as tone deaf by your audience.`,
+        content2: `Having cultural intelligence as a brand is a necessity. Firstly, it makes you relatable. This is what we refer to as humanizing the brand. When your audience finds a piece of themselves in you, they stick around for a long time. This leads me to my second point; cultural intelligence promotes brand longevity and loyalty. You become memorable, referenced and ultimately loved. Your audience develops an emotional connection with you and that becomes a difficult bond to break. Every brand must strive to have this kind of connection with their audience. All of these have the potential to widen a brand's access to more audiences.`,
+        content3: `Coca-Cola demonstrated this brilliantly with its "Share a Coke" campaign 2011. On the surface, it seemed simple. Finding your name on a bottle. However, the campaign tapped into something much deeper: people's desire to feel seen and belong. The company took the time to localize the campaign, using names that reflected each audience rather than applying the same list everywhere. That attention to cultural nuance transformed what could have been a generic global campaign into something that felt personal and relevant to people in different countries.`,
+        content3b: `The effects of the presence of cultural intelligence is just as telling as the effects of its absence. Take NIVEA's "White is Purity" campaign. These three words, in hindsight which is always 20/20, were problematic. It was created to promote its Invisible for Black & White deodorant line and reportedly intended for Middle Eastern audiences. Unfortunately, the campaign quickly sparked global backlash. While the brand's intention may have been to communicate freshness and cleanliness, it failed to consider the historical and racial weight behind those three words.`,
+        content7: `To make matters worse, the accompanying slogan, "Keep it Clean. Keep it Bright. Don't Let Anything Ruin It," was embraced by white supremacist groups online, reinforcing just how easily a message can take on a meaning the brand never intended. That's the thing about cultural intelligence. It asks brands to think beyond what they want to say and consider how people are likely to receive it. No matter how brilliant a campaign looks in the boardroom, it is the audience that gives it meaning.`,
+        content8: `Exercise your cultural intelligence today. Before you speak, listen. Spend more time in conversations with your audience. Prioritize understanding cultural contexts. No one should be gesturing and receiving any kind of item with their left hand in an ad for a Ghanaian audience. It will be considered rude. Pay special attention to the details and have a respect for cultural nuances. In a world where culture is always constantly evolving, cultural intelligence may be one of the most valuable forms of intelligence a brand can have.`,
+    },
+
+      {
         id: 10,
         category: "Insight",
         title: "The Accidental Brand Campaign of the Year.",
@@ -304,19 +352,20 @@ const BlogDetail = () => {
                 </div>
             </div>
 
-            <div className="max-w-[1125px] mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="max-w-[1125px] mx-auto px-4 py-8">
+                {/* Full-width hero banner — natural aspect ratio, nothing cropped */}
+                <div className="w-full overflow-hidden rounded-2xl shadow-md mb-8">
+                    <img
+                        src={blogPost.image}
+                        alt={blogPost.title}
+                        className="w-full h-auto"
+                        loading="lazy"
+                    />
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
                 <main className="lg:col-span-2 bg-white rounded-2xl shadow-md overflow-hidden">
-                    {/* Hero image — full-width cover, no whitespace */}
-                    <div className="w-full overflow-hidden">
-                        <img
-                            src={blogPost.image}
-                            alt={blogPost.title}
-                            className="w-full h-[300px] md:h-[460px] object-cover"
-                            loading="lazy"
-                        />
-                    </div>
-
                     <div className="p-6 md:p-8">
                         {/* Title + author row */}
                         <span className="text-[#B3261E] font-bold text-[11px] tracking-wider uppercase block mb-3">
@@ -523,6 +572,7 @@ const BlogDetail = () => {
                         </div>
                     </div>
                 </aside>
+                </div>
             </div>
         </div>
     );
